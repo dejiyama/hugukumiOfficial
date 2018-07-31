@@ -1,0 +1,3 @@
+rootProject.name = 'hugukumi_official'
+
+include ':app'
