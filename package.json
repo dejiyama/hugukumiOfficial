@@ -21,7 +21,9 @@
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.4.1",
     "ts-jest": "^23.0.1",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "@babel/core": "^7.0.0-beta",
+     "babel-core": "^7.0.0-beta"
   },
   "jest": {
     "preset": "react-native",
