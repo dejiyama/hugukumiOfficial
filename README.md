@@ -10,8 +10,8 @@
   - [ ] build trigger
   - [ ] run fastlane
 - Storybook
-  - [ ] iOS
-  - [ ] Android
+  - [x] iOS
+  - [x] Android
 - Fastlane
   - [ ] iOS
   - [ ] Android
