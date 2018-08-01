@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableNativeFeedback, Text, View } from 'react-native'
+import { TouchableNativeFeedback, View } from 'react-native'
 
 export default (props: any) => (
   <View>

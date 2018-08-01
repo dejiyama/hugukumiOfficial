@@ -8,7 +8,6 @@
     "storybook": "storybook start -p 7007 --metro-config $PWD/rn-cli.config.js"
   },
   "dependencies": {
-    "@types/storybook__react-native": "^3.0.0",
     "react": "16.4.1",
     "react-native": "0.56.0"
   },

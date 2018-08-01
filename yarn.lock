@@ -1060,10 +1060,6 @@
   dependencies:
     csstype "^2.2.0"
 
-"@types/storybook__react-native@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/storybook__react-native/-/storybook__react-native-3.0.0.tgz#bcb5fa668134b69af60908ac718eaac1abe1d3e6"
-
 "@webassemblyjs/ast@1.5.13":
   version "1.5.13"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.5.13.tgz#81155a570bd5803a30ec31436bc2c9c0ede38f25"
