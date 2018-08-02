@@ -6,8 +6,8 @@
 - Slack integration
   - [x] notifications
 - Bitrise integration
-  - [ ] integration
-  - [ ] build trigger
+  - [x] integration
+  - [x] build trigger
   - [ ] run fastlane
 - Storybook
   - [x] iOS
