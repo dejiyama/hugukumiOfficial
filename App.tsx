@@ -1,39 +1,122 @@
 import React, { Component } from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Image } from 'react-native'
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu'
-})
+import HomeScreen from './webview/screen/HomeScreen';
+import BiyoriScreen from './webview/screen/BiyoriScreen';
+import LineupScreen from './webview/screen/LineupScreen';
+import VoiceScreen from './webview/screen/VoiceScreen';
+import EtceteraScreen from './webview/screen/EtceteraScreen';
 
-type Props = {}
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    )
-  }
+const HomeStack = StackNavigator ({
+  Home:{ screen: HomeScreen }
+},
+{
+  navigationOptions: {
+  header:null,
 }
+});
+
+const BiyoriStack = StackNavigator ({
+  Biyori:{ screen: BiyoriScreen }
+},
+{
+  navigationOptions: {
+  header:null,
+}
+});
+
+const LineupStack = StackNavigator({
+  Lineup:{ screen: LineupScreen }
+},
+{
+  navigationOptions: {
+  header:null,
+}
+});
+
+const VoiceStack = StackNavigator({
+  Lineup:{ screen: VoiceScreen }
+},
+{
+  navigationOptions: {
+  header:null,
+}
+});
+
+const EtceteraStack = StackNavigator({
+  Lineup:{ screen: EtceteraScreen }
+},
+{
+  navigationOptions: {
+  header:null,
+
+}
+});
+
+var ScreenNavigate = TabNavigator({
+  "ホーム": {screen: HomeStack,
+    navigationOptions: {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./webview/images/Homelogo.png')}
+        style={[styles.icon, { tintColor: tintColor }]}
+      />
+    )},
+  },
+  "商品ラインナップ": {screen: LineupStack,
+    navigationOptions: {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./webview/images/Search.png')}
+        style={[styles.icon, { tintColor: tintColor }]}
+      />
+    )},
+  },
+  "お客様の声": {screen: VoiceStack,
+    navigationOptions: {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./webview/images/Voice.png')}
+        style={[styles.icon, { tintColor: tintColor }]}
+      />
+    )},
+  },
+  "コラム": {screen: BiyoriStack,
+    navigationOptions: {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./webview/images/Homelogo.png')}
+        style={[styles.icon, { tintColor: tintColor }]}
+      />
+    )},
+  },
+  "その他": {screen: EtceteraStack,
+    navigationOptions: {
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./webview/images/Homelogo.png')}
+        style={[styles.icon, { tintColor: tintColor }]}
+      />
+    )},
+  }
+},{
+  tabBarPosition: 'bottom',
+    animationEnabled: true,
+    swipeEnabled: true,
+    tabBarOptions: {
+      activeBackgroundColor: 'white',
+      activeTintColor: 'black',
+      inactiveTintColor: '#D7DBDD',
+      inactiveBackgroundColor: 'white',
+      labeeStyle: {
+        fontSize: 16,
+        padding: 10
+      },
+    }
+})
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
 })
+
+export default ScreenNavigate;
