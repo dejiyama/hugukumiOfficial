@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest && tsc && yarn run build:android && yarn run build:ios",
+    "test": "jest && tsc && yarn run",
     "build:android": "cd android && ./gradlew aR",
     "build:ios": "cd ios && xcodebuild -project hugukumi_official.xcodeproj -scheme hugukumi_official -configuration release",
     "storybook": "storybook start -p 7007 --metro-config $PWD/rn-cli.config.js"
