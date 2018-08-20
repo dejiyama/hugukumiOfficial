@@ -1,10 +1,10 @@
 import { StackNavigator } from 'react-navigation'
-import Item from '../src/Item'
-import About from '../src/About'
-import Guide from '../src/Guide'
-import Mypage from '../src/Mypage'
-import Privacy from '../src/Privacy'
-import Question from '../src/Question'
+import Item from './EtcScreens/Item'
+import About from './EtcScreens/About'
+import Guide from './EtcScreens/Guide'
+import Mypage from './EtcScreens/Mypage'
+import Privacy from './EtcScreens/Privacy'
+import Question from './EtcScreens/Question'
 
 const Etcetera = StackNavigator({
   Item: { screen: Item },

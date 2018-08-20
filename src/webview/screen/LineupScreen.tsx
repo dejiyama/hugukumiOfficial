@@ -1,5 +1,7 @@
 import React from 'react'
-import { View, StyleSheet, Text, WebView, TouchableOpacity } from 'react-native'
+import { View, Image, WebView, TouchableOpacity } from 'react-native'
+
+const header_style = require('../../config/header_style.json')
 
 class Lineup extends React.Component {
   webViewRef = React.createRef<WebView>()
@@ -11,12 +13,12 @@ class Lineup extends React.Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.title_view}>
+      <View style={header_style.container}>
+        <View style={header_style.title_view}>
           <TouchableOpacity onPress={this.goBack}>
-            <Text style={styles.title_text}>戻る</Text>
+            <Image source={require('../../images/header_btn_goback.png')} style={header_style.header_btn} />
           </TouchableOpacity>
-          <Text style={styles.title_text}>hugkumiplus</Text>
+          <Image source={require('../../images/header_logo.png')} style={header_style.header_logo} />
         </View>
         <WebView
           startInLoadingState={true}
@@ -30,27 +32,5 @@ class Lineup extends React.Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
-  title_view: {
-    flexDirection: 'row',
-    height: 60,
-    paddingLeft: 15,
-    paddingRight: 15,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#27b5ee'
-  },
-  title_text: {
-    color: 'white',
-    fontSize: 22,
-    textAlign: 'center',
-    paddingTop: 20
-  }
-})
 
 export default Lineup

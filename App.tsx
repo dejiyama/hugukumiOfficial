@@ -2,11 +2,11 @@ import React from 'react'
 import { Image } from 'react-native'
 import { TabNavigator } from 'react-navigation'
 
-import HomeScreen from './webview/screen/HomeScreen'
-import BiyoriScreen from './webview/screen/BiyoriScreen'
-import LineupScreen from './webview/screen/LineupScreen'
-import VoiceScreen from './webview/screen/VoiceScreen'
-import EtceteraScreen from './webview/screen/EtceteraScreen'
+import HomeScreen from './src/webview/screen/HomeScreen'
+import BiyoriScreen from './src/webview/screen/BiyoriScreen'
+import LineupScreen from './src/webview/screen/LineupScreen'
+import VoiceScreen from './src/webview/screen/VoiceScreen'
+import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 
 var ScreenNavigate = TabNavigator(
   {
@@ -14,15 +14,15 @@ var ScreenNavigate = TabNavigator(
       screen: HomeScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./webview/images/Homelogo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/home_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    商品ラインナップ: {
+    商品: {
       screen: LineupScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./webview/images/Search.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/search_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
@@ -30,15 +30,15 @@ var ScreenNavigate = TabNavigator(
       screen: VoiceScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./webview/images/Voice.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/voice_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    コラム: {
+    はぐくみ日和: {
       screen: BiyoriScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./webview/images/Homelogo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/column_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
@@ -46,7 +46,7 @@ var ScreenNavigate = TabNavigator(
       screen: EtceteraScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./webview/images/Homelogo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/etc_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     }
@@ -61,8 +61,9 @@ var ScreenNavigate = TabNavigator(
       inactiveTintColor: '#D7DBDD',
       inactiveBackgroundColor: 'white',
       labelStyle: {
-        fontSize: 16,
-        padding: 10
+        fontSize: 10,
+        paddingLeft: 10,
+        paddingRight: 10
       }
     }
   }
