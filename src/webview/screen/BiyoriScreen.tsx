@@ -6,6 +6,10 @@ import KosodateScreen from './BiyoriScreens/KosodateScreen'
 import HapisapoScreen from './BiyoriScreens/HapisapoScreen'
 import HensyushituScreen from './BiyoriScreens/HensyushituScreen'
 
+const Value = require('../../config/value.json')
+
+const Color = require('../../config/color.json')
+
 const Biyori = createMaterialTopTabNavigator(
   {
     はぐまい: { screen: HagumaiScreen },
@@ -17,7 +21,7 @@ const Biyori = createMaterialTopTabNavigator(
   },
   {
     tabBarOptions: {
-      activeTintColor: 'black',
+      activeTintColor: Color.activeTintColor,
       inactiveTintColor: '#D7DBDD',
       indicatorStyle: {
         backgroundColor: 'black'
@@ -25,11 +29,7 @@ const Biyori = createMaterialTopTabNavigator(
       style: {
         backgroundColor: '#F8F9F9'
       },
-      labelStyle: {
-        fontSize: 9,
-        padding: 0,
-        margin: 0
-      }
+      labelStyle: Value.position
     }
   }
 )

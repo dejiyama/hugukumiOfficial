@@ -1,34 +1,70 @@
 import React from 'react'
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Text, TouchableHighlight } from 'react-native'
 
 class Item extends React.Component<{ navigation: any }> {
   navigation: any
+
+  MoveMypage = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('Mypage')
+    })
+  }
+
+  MoveGuide = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('Guide')
+    })
+  }
+
+  MoveHighlight = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('About')
+    })
+  }
+
+  MoveQuestion = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('Question')
+    })
+  }
+
+  MoveAbout = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('About')
+    })
+  }
+
+  MovePrivacy = () => {
+    this.setState({
+      navigation: this.props.navigation.navigate('Privacy')
+    })
+  }
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={this.props.navigation.navigate('Mypage')} style={styles.page}>
+        <TouchableHighlight onPress={this.MoveMypage} style={styles.page}>
           <Text>マイページ</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
 
-        <TouchableOpacity onPress={this.props.navigation.navigate('Guide')} style={styles.page}>
+        <TouchableHighlight onPress={this.MoveGuide} style={styles.page}>
           <Text>購入ガイド</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
 
-        <TouchableOpacity onPress={this.props.navigation.navigate('About')} style={styles.page}>
+        <TouchableHighlight onPress={this.MoveAbout} style={styles.page}>
           <Text>サプリタイマー</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
 
-        <TouchableOpacity onPress={this.props.navigation.navigate('Question')} style={styles.page}>
+        <TouchableHighlight onPress={this.MoveQuestion} style={styles.page}>
           <Text>お問い合わせ</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
 
-        <TouchableOpacity onPress={this.props.navigation.navigate('About')} style={styles.page}>
+        <TouchableHighlight onPress={this.MoveAbout} style={styles.page}>
           <Text>会社概要</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
 
-        <TouchableOpacity onPress={this.props.navigation.navigate('Privacy')} style={styles.page}>
+        <TouchableHighlight onPress={this.MovePrivacy} style={styles.page}>
           <Text>プライバシーポリシー</Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
       </View>
     )
   }

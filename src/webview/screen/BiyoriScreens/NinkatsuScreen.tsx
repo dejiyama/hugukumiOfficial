@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, TouchableOpacity, WebView } from 'react-native'
-import inject from './InjectJS'
+import Inject from './InjectJS'
 
 const header_style = require('../../../config/header_style.json')
 
@@ -23,10 +23,11 @@ class NinkatsuScreen extends React.Component {
           <Image source={require('../../../images/header_logo.png')} style={header_style.header_logo} />
         </View>
         <WebView
+          originWhitelist={['*']}
           ref={this.webViewRef}
           javaScriptEnabled={true}
           domStorageEnabled={true}
-          injectedJavaScript={inject}
+          injectedJavaScript={Inject}
           source={{ uri: 'https://www.hugkumiplus.net/biyori/ninkatsu/' }}
           startInLoadingState={true}
         />

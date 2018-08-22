@@ -23,6 +23,7 @@ class HagumaiScreen extends React.Component {
           <Image source={require('../../../images/header_logo.png')} style={header_style.header_logo} />
         </View>
         <WebView
+          originWhitelist={['*']}
           startInLoadingState={true}
           ref={this.webViewRef}
           javaScriptEnabled={true}

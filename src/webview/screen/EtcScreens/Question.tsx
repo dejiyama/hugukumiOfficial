@@ -5,6 +5,7 @@ class Question extends React.Component {
   render() {
     return (
       <WebView
+        originWhitelist={['*']}
         startInLoadingState={true}
         javaScriptEnabled={true}
         domStorageEnabled={true}

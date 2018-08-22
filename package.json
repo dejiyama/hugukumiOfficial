@@ -10,6 +10,7 @@
     "storybook": "storybook start -p 7007 --metro-config $PWD/rn-cli.config.js"
   },
   "dependencies": {
+    "@types/react-navigation": "^2.0.16",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-navigation": "^2.11.2"
