@@ -12,22 +12,52 @@ const Color = require('../../config/color.json')
 
 const Biyori = createMaterialTopTabNavigator(
   {
-    はぐまい: { screen: HagumaiScreen },
-    '妊娠・出産': { screen: NinshinScreen },
-    妊活: { screen: NinkatsuScreen },
-    子育て: { screen: KosodateScreen },
-    はぴサポ: { screen: HapisapoScreen },
-    編集室: { screen: HensyushituScreen }
+    Hagumai: {
+      screen: HagumaiScreen,
+      navigationOptions: {
+        tabBarLabel: 'はぐまい'
+      }
+    },
+    Ninshin: {
+      screen: NinshinScreen,
+      navigationOptions: {
+        tabBarLabel: '妊娠・出産'
+      }
+    },
+    Ninkatsu: {
+      screen: NinkatsuScreen,
+      navigationOptions: {
+        tabBarLabel: '妊活'
+      }
+    },
+    Kosodate: {
+      screen: KosodateScreen,
+      navigationOptions: {
+        tabBarLabel: '子育て'
+      }
+    },
+    Hapisapo: {
+      screen: HapisapoScreen,
+      navigationOptions: {
+        tabBarLabel: 'はぴサポ'
+      }
+    },
+    Hensyushitu: {
+      screen: HensyushituScreen,
+      navigationOptions: {
+        tabBarLabel: '編集室'
+      }
+    }
   },
   {
     tabBarOptions: {
-      activeTintColor: Color.activeTintColor,
-      inactiveTintColor: '#D7DBDD',
+      activeTintColor: Color.tabBarOptions.active,
+      inactiveTintColor: Color.tabBarOptions.inactive,
       indicatorStyle: {
-        backgroundColor: 'black'
+        backgroundColor: Color.indicatorStyle.backgroundColor
       },
       style: {
-        backgroundColor: '#F8F9F9'
+        backgroundColor: Color.style.backgroundColor
       },
       labelStyle: Value.position
     }

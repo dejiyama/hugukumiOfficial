@@ -1,105 +1,56 @@
 import React from 'react'
 import { Image } from 'react-native'
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator } from 'react-navigation'
 import HomeScreen from './src/webview/screen/HomeScreen'
 import BiyoriScreen from './src/webview/screen/BiyoriScreen'
 import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 
-const HomeStack = createStackNavigator(
-  {
-    Home: { screen: HomeScreen }
-  },
-  {
-    navigationOptions: {
-      header: null
-    }
-  }
-)
-const BiyoriStack = createStackNavigator(
-  {
-    Biyori: { screen: BiyoriScreen }
-  },
-  {
-    navigationOptions: {
-      header: null
-    }
-  }
-)
-const LineupStack = createStackNavigator(
-  {
-    Lineup: { screen: LineupScreen }
-  },
-  {
-    navigationOptions: {
-      header: null
-    }
-  }
-)
-const VoiceStack = createStackNavigator(
-  {
-    Lineup: { screen: VoiceScreen }
-  },
-  {
-    navigationOptions: {
-      header: null
-    }
-  }
-)
-const EtceteraStack = createStackNavigator(
-  {
-    Lineup: { screen: EtceteraScreen }
-  },
-  {
-    navigationOptions: {
-      header: null
-    }
-  }
-)
+const Color = require('./src/config/color.json')
 
 const ScreenNavigate = createBottomTabNavigator(
   {
-    ホーム: {
-      screen: HomeStack,
+    Home: {
+      screen: HomeScreen,
       navigationOptions: {
-        tabBarLabele: 'ホーム',
+        title: 'ホーム',
         tabBarIcon: ({ tintColor }: any) => (
           <Image source={require('./src/images/home_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    商品: {
-      screen: LineupStack,
+    Lineup: {
+      screen: LineupScreen,
       navigationOptions: {
-        tabBarLabele: '商品',
+        title: '商品',
         tabBarIcon: ({ tintColor }: any) => (
           <Image source={require('./src/images/search_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    お客様の声: {
-      screen: VoiceStack,
+    Voice: {
+      screen: VoiceScreen,
       navigationOptions: {
-        tabBarLabele: 'お客様の声',
+        title: 'お客様の声',
         tabBarIcon: ({ tintColor }: any) => (
           <Image source={require('./src/images/voice_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    はぐくみ日和: {
-      screen: BiyoriStack,
+    Biyori: {
+      screen: BiyoriScreen,
       navigationOptions: {
-        tabBarLabele: 'はぐくみ日和',
+        title: 'はぐくみ日和',
         tabBarIcon: ({ tintColor }: any) => (
           <Image source={require('./src/images/column_logo.png')} style={{ tintColor: tintColor }} />
         )
       }
     },
-    その他: {
-      screen: EtceteraStack,
+    Etcetera: {
+      screen: EtceteraScreen,
       navigationOptions: {
-        tabBarLabele: 'その他',
+        title: 'その他',
         tabBarIcon: ({ tintColor }: any) => (
           <Image source={require('./src/images/etc_logo.png')} style={{ tintColor: tintColor }} />
         )
@@ -109,12 +60,12 @@ const ScreenNavigate = createBottomTabNavigator(
   {
     tabBarPosition: 'bottom',
     animationEnabled: true,
-    swipeEnabled: true,
+    swipeEnabled: false,
     tabBarOptions: {
-      activeBackgroundColor: 'white',
-      activeTintColor: 'black',
-      inactiveTintColor: '#D7DBDD',
-      inactiveBackgroundColor: 'white',
+      activeBackgroundColor: Color.tabBarOptions.activeBackground,
+      activeTintColor: Color.tabBarOptions.active,
+      inactiveTintColor: Color.tabBarOptions.inactive,
+      inactiveBackgroundColor: Color.tabBarOptions.inactiveBackground,
       labelStyle: {
         fontSize: 10,
         paddingLeft: 10,
