@@ -5,10 +5,8 @@ import NinkatsuScreen from './BiyoriScreens/NinkatsuScreen'
 import KosodateScreen from './BiyoriScreens/KosodateScreen'
 import HapisapoScreen from './BiyoriScreens/HapisapoScreen'
 import HensyushituScreen from './BiyoriScreens/HensyushituScreen'
-
-const Value = require('../../config/value.json')
-
-const Color = require('../../config/color.json')
+import Color from '../../config/color.json'
+import Value from '../../config/value.json'
 
 const Biyori = createMaterialTopTabNavigator(
   {

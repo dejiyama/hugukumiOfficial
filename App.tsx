@@ -6,8 +6,7 @@ import BiyoriScreen from './src/webview/screen/BiyoriScreen'
 import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
-
-const Color = require('./src/config/color.json')
+import Color from './src/config/color.json'
 
 const ScreenNavigate = createBottomTabNavigator(
   {
@@ -16,7 +15,7 @@ const ScreenNavigate = createBottomTabNavigator(
       navigationOptions: {
         title: 'ホーム',
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./src/images/home_logo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/home_logo.png')} style={{ tintColor }} />
         )
       }
     },
@@ -25,7 +24,7 @@ const ScreenNavigate = createBottomTabNavigator(
       navigationOptions: {
         title: '商品',
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./src/images/search_logo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/search_logo.png')} style={{ tintColor }} />
         )
       }
     },
@@ -34,7 +33,7 @@ const ScreenNavigate = createBottomTabNavigator(
       navigationOptions: {
         title: 'お客様の声',
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./src/images/voice_logo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/voice_logo.png')} style={{ tintColor }} />
         )
       }
     },
@@ -43,7 +42,7 @@ const ScreenNavigate = createBottomTabNavigator(
       navigationOptions: {
         title: 'はぐくみ日和',
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./src/images/column_logo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/column_logo.png')} style={{ tintColor }} />
         )
       }
     },
@@ -52,7 +51,7 @@ const ScreenNavigate = createBottomTabNavigator(
       navigationOptions: {
         title: 'その他',
         tabBarIcon: ({ tintColor }: any) => (
-          <Image source={require('./src/images/etc_logo.png')} style={{ tintColor: tintColor }} />
+          <Image source={require('./src/images/etc_logo.png')} style={{ tintColor }} />
         )
       }
     }

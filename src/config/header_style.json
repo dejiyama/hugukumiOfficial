@@ -4,10 +4,10 @@
     "backgroundColor": "white"
   },
   "title_view": {
-    "flexDirection": "row",
     "height": 60,
     "paddingLeft": 15,
     "paddingRight": 15,
+    "flexDirection": "row",
     "alignItems": "center",
     "backgroundColor": "#F7F7F7"
   },
