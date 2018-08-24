@@ -1,7 +1,7 @@
 import React from 'react'
 import { WebView, View, TouchableOpacity, Image } from 'react-native'
 
-const header_style = require('../../config/header_style.json')
+import header_style from '../../config/header_style.json'
 
 class Voice extends React.Component {
   webViewRef = React.createRef<WebView>()

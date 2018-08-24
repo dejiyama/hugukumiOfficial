@@ -2,67 +2,41 @@ import React from 'react'
 import { View, StyleSheet, Text, TouchableHighlight } from 'react-native'
 
 class Item extends React.Component<{ navigation: any }> {
-  navigation: any
+  moveMypage = () => this.props.navigation.navigate('Mypage')
 
-  MoveMypage = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('Mypage')
-    })
-  }
+  moveGuide = () => this.props.navigation.navigate('Guide')
 
-  MoveGuide = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('Guide')
-    })
-  }
+  moveHighlight = () => this.props.navigation.navigate('About')
 
-  MoveHighlight = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('About')
-    })
-  }
+  moveQuestion = () => this.props.navigation.navigate('Question')
 
-  MoveQuestion = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('Question')
-    })
-  }
+  moveAbout = () => this.props.navigation.navigate('About')
 
-  MoveAbout = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('About')
-    })
-  }
-
-  MovePrivacy = () => {
-    this.setState({
-      navigation: this.props.navigation.navigate('Privacy')
-    })
-  }
+  movePrivacy = () => this.props.navigation.navigate('Privacy')
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight onPress={this.MoveMypage} style={styles.page}>
+        <TouchableHighlight onPress={this.moveMypage} style={styles.page}>
           <Text>マイページ</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.MoveGuide} style={styles.page}>
+        <TouchableHighlight onPress={this.moveGuide} style={styles.page}>
           <Text>購入ガイド</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.MoveAbout} style={styles.page}>
+        <TouchableHighlight onPress={this.moveAbout} style={styles.page}>
           <Text>サプリタイマー</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.MoveQuestion} style={styles.page}>
+        <TouchableHighlight onPress={this.moveQuestion} style={styles.page}>
           <Text>お問い合わせ</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.MoveAbout} style={styles.page}>
+        <TouchableHighlight onPress={this.moveAbout} style={styles.page}>
           <Text>会社概要</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.MovePrivacy} style={styles.page}>
+        <TouchableHighlight onPress={this.movePrivacy} style={styles.page}>
           <Text>プライバシーポリシー</Text>
         </TouchableHighlight>
       </View>

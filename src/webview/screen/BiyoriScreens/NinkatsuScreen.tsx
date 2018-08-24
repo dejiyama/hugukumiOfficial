@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Image, TouchableOpacity, WebView } from 'react-native'
 import Inject from './InjectJS'
 
-const header_style = require('../../../config/header_style.json')
+import header_style from '../../../config/header_style.json'
 
 class NinkatsuScreen extends React.Component {
   webViewRef = React.createRef<WebView>()
