@@ -1,17 +1,67 @@
 import React from 'react'
 import { Image } from 'react-native'
-import { createBottomTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation'
 import HomeScreen from './src/webview/screen/HomeScreen'
 import BiyoriScreen from './src/webview/screen/BiyoriScreen'
 import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 import Color from './src/config/color.json'
+import Homeheader from './src/elements/Homeheader'
+import Biyoriheader from './src/elements/Biyoriheader'
+import Etceteraheader from './src/elements/Etceteraheader'
+import Lineupheader from './src/elements/Lineupheader'
+import Voiceheader from './src/elements/Voiceheader'
+
+const HomeStack = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      header: <Homeheader />
+    }
+  }
+})
+
+const LineupStack = createStackNavigator({
+  Lineup: {
+    screen: LineupScreen,
+    navigationOptions: {
+      header: <Lineupheader />
+    }
+  }
+})
+
+const VoiceStack = createStackNavigator({
+  Voice: {
+    screen: VoiceScreen,
+    navigationOptions: {
+      header: <Voiceheader />
+    }
+  }
+})
+
+const BiyoriStack = createStackNavigator({
+  Biyori: {
+    screen: BiyoriScreen,
+    navigationOptions: {
+      header: <Biyoriheader />
+    }
+  }
+})
+
+const EtceteraStack = createStackNavigator({
+  Etcetera: {
+    screen: EtceteraScreen,
+    navigationOptions: {
+      header: <Etceteraheader />
+    }
+  }
+})
 
 const ScreenNavigate = createBottomTabNavigator(
   {
     Home: {
-      screen: HomeScreen,
+      screen: HomeStack,
       navigationOptions: {
         title: 'ホーム',
         tabBarIcon: ({ tintColor }: any) => (
@@ -20,7 +70,7 @@ const ScreenNavigate = createBottomTabNavigator(
       }
     },
     Lineup: {
-      screen: LineupScreen,
+      screen: LineupStack,
       navigationOptions: {
         title: '商品',
         tabBarIcon: ({ tintColor }: any) => (
@@ -29,7 +79,7 @@ const ScreenNavigate = createBottomTabNavigator(
       }
     },
     Voice: {
-      screen: VoiceScreen,
+      screen: VoiceStack,
       navigationOptions: {
         title: 'お客様の声',
         tabBarIcon: ({ tintColor }: any) => (
@@ -38,7 +88,7 @@ const ScreenNavigate = createBottomTabNavigator(
       }
     },
     Biyori: {
-      screen: BiyoriScreen,
+      screen: BiyoriStack,
       navigationOptions: {
         title: 'はぐくみ日和',
         tabBarIcon: ({ tintColor }: any) => (
@@ -47,7 +97,7 @@ const ScreenNavigate = createBottomTabNavigator(
       }
     },
     Etcetera: {
-      screen: EtceteraScreen,
+      screen: EtceteraStack,
       navigationOptions: {
         title: 'その他',
         tabBarIcon: ({ tintColor }: any) => (

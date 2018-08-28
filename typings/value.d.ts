@@ -1,9 +1,13 @@
 declare module '*/value.json' {
-  const postion: RootObject
-  export default postion
+  const position: RootObject
+  export default position
 }
 
-interface position {
+interface RootObject {
+  position: Position
+}
+
+interface Position {
   fontSize: number
   padding: number
   margin: number
