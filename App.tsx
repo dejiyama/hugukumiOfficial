@@ -16,8 +16,10 @@ import Voiceheader from './src/elements/Voiceheader'
 const HomeStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
-    navigationOptions: {
-      header: <Homeheader />
+    navigationOptions: ({ navigation }: any) => {
+      return {
+        header: <Homeheader onClickBack={navigation.getParam('onClickBack')} />
+      }
     }
   }
 })

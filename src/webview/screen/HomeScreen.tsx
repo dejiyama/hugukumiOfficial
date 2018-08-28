@@ -1,8 +1,19 @@
 import React from 'react'
 import { WebView } from 'react-native'
 
-class Home extends React.Component {
+class Home extends React.Component<any> {
   webViewRef = React.createRef<WebView>()
+
+  constructor(props: any) {
+    super(props)
+    props.navigation.setParams({ onClickBack: this.onClickBack })
+  }
+
+  onClickBack = () => {
+    if (this.webViewRef.current) {
+      this.webViewRef.current.goBack()
+    }
+  }
 
   render() {
     return (
