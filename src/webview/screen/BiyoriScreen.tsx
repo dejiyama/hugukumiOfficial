@@ -5,7 +5,6 @@ import NinkatsuScreen from './BiyoriScreens/NinkatsuScreen'
 import KosodateScreen from './BiyoriScreens/KosodateScreen'
 import HapisapoScreen from './BiyoriScreens/HapisapoScreen'
 import HensyushituScreen from './BiyoriScreens/HensyushituScreen'
-
 import Color from '../../config/color.json'
 import Value from '../../config/value.json'
 

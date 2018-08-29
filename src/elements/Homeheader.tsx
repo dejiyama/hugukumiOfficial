@@ -1,5 +1,5 @@
 import React from 'react'
-import { WebView, TouchableOpacity, View, Image } from 'react-native'
+import { TouchableOpacity, View, Image } from 'react-native'
 import header_style from '../config/header_style.json'
 
 interface Props {

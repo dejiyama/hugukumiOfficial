@@ -1,7 +1,13 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import Homeheader from '../../elements/Homeheader'
 
 class Home extends React.Component<any> {
+  static navigationOptions = ({ navigation }: any) => {
+    return {
+      header: <Homeheader onClickBack={navigation.getParam('onClickBack')} />
+    }
+  }
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {

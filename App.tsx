@@ -7,57 +7,26 @@ import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 import Color from './src/config/color.json'
-import Homeheader from './src/elements/Homeheader'
-import Biyoriheader from './src/elements/Biyoriheader'
-import Etceteraheader from './src/elements/Etceteraheader'
-import Lineupheader from './src/elements/Lineupheader'
-import Voiceheader from './src/elements/Voiceheader'
-
 const HomeStack = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-    navigationOptions: ({ navigation }: any) => {
-      return {
-        header: <Homeheader onClickBack={navigation.getParam('onClickBack')} />
-      }
-    }
-  }
+  Home: { screen: HomeScreen }
 })
 
 const LineupStack = createStackNavigator({
-  Lineup: {
-    screen: LineupScreen,
-    navigationOptions: {
-      header: <Lineupheader />
-    }
-  }
+  Lineup: { screen: LineupScreen }
 })
 
 const VoiceStack = createStackNavigator({
-  Voice: {
-    screen: VoiceScreen,
-    navigationOptions: {
-      header: <Voiceheader />
-    }
-  }
+  Voice: { screen: VoiceScreen }
 })
 
 const BiyoriStack = createStackNavigator({
   Biyori: {
-    screen: BiyoriScreen,
-    navigationOptions: {
-      header: <Biyoriheader />
-    }
+    screen: BiyoriScreen
   }
 })
 
 const EtceteraStack = createStackNavigator({
-  Etcetera: {
-    screen: EtceteraScreen,
-    navigationOptions: {
-      header: <Etceteraheader />
-    }
-  }
+  Etcetera: { screen: EtceteraScreen }
 })
 
 const ScreenNavigate = createBottomTabNavigator(
