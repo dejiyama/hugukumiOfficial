@@ -7,6 +7,8 @@ import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 import Color from './src/config/color.json'
+import Biyoriheader from './src/elements/Biyoriheader'
+import Etceteraheader from 'src/elements/Etceteraheader'
 const HomeStack = createStackNavigator({
   Home: { screen: HomeScreen }
 })
@@ -21,12 +23,19 @@ const VoiceStack = createStackNavigator({
 
 const BiyoriStack = createStackNavigator({
   Biyori: {
-    screen: BiyoriScreen
+    screen: BiyoriScreen,
+    navigationOptions: ({ navigation }: any) => {
+      return {
+        header: <Biyoriheader onClickBack={navigation.getParam('onClickBack')} />
+      }
+    }
   }
 })
 
 const EtceteraStack = createStackNavigator({
-  Etcetera: { screen: EtceteraScreen }
+  Etcetera: {
+    screen: EtceteraScreen
+  }
 })
 
 const ScreenNavigate = createBottomTabNavigator(
