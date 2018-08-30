@@ -21,5 +21,17 @@
     "height": 20,
     "top": 8,
     "left": 100
+  },
+  "etc_header_btn": {
+    "width": 26,
+    "height": 26,
+    "bottom":4,
+    "left": 15 
+  },
+  "etc_header_logo": {
+    "width": 100,
+    "height": 20,
+    "bottom":4,
+    "left": 3.5
   }
 }

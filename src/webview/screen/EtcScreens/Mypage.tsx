@@ -1,7 +1,21 @@
 import React from 'react'
 import { WebView } from 'react-native'
 
-class Mypage extends React.Component {
+class Mypage extends React.Component<any> {
+  webViewRef = React.createRef<WebView>()
+
+  constructor(props: any) {
+    super(props)
+    props.navigation.addListener('didFocus', () =>
+      props.navigation.dangerouslyGetParent().setParams({ onClickBack: this.onClickBack })
+    )
+  }
+
+  onClickBack = () => {
+    if (this.webViewRef.current) {
+      this.webViewRef.current.goBack()
+    }
+  }
   render() {
     return (
       <WebView

@@ -34,7 +34,10 @@ const BiyoriStack = createStackNavigator({
 
 const EtceteraStack = createStackNavigator({
   Etcetera: {
-    screen: EtceteraScreen
+    screen: EtceteraScreen,
+    navigationOptions: {
+      header: null
+    }
   }
 })
 
