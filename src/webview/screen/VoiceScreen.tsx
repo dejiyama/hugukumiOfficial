@@ -1,9 +1,25 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import Voiceheader from '../../elements/Voiceheader'
 
 class Voice extends React.Component {
+  static navigationOptions = ({ navigation }: any) => {
+    return {
+      header: <Voiceheader onClickBack={navigation.getParam('onClickBack')} />
+    }
+  }
   webViewRef = React.createRef<WebView>()
 
+  constructor(props: any) {
+    super(props)
+    props.navigation.setParams({ onClickBack: this.onClickBack })
+  }
+
+  onClickBack = () => {
+    if (this.webViewRef.current) {
+      this.webViewRef.current.goBack()
+    }
+  }
   render() {
     return (
       <WebView

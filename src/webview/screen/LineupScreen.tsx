@@ -1,9 +1,25 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import Lineupheader from '../../elements/Lineupheader'
 
 class Lineup extends React.Component {
+  static navigationOptions = ({ navigation }: any) => {
+    return {
+      header: <Lineupheader onClickBack={navigation.getParam('onClickBack')} />
+    }
+  }
   webViewRef = React.createRef<WebView>()
 
+  constructor(props: any) {
+    super(props)
+    props.navigation.setParams({ onClickBack: this.onClickBack })
+  }
+
+  onClickBack = () => {
+    if (this.webViewRef.current) {
+      this.webViewRef.current.goBack()
+    }
+  }
   render() {
     return (
       <WebView

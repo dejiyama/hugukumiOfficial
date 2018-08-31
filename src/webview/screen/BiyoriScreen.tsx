@@ -1,11 +1,10 @@
 import { createMaterialTopTabNavigator } from 'react-navigation'
-import HagumaiScreen from './BiyoriScreens/HagumaiScreen'
-import NinshinScreen from './BiyoriScreens/NinshinScreen'
-import NinkatsuScreen from './BiyoriScreens/NinkatsuScreen'
-import KosodateScreen from './BiyoriScreens/KosodateScreen'
-import HapisapoScreen from './BiyoriScreens/HapisapoScreen'
-import HensyushituScreen from './BiyoriScreens/HensyushituScreen'
-
+import HagumaiScreen from '../screen/BiyoriScreens/HagumaiScreen'
+import NinshinScreen from '../screen/BiyoriScreens/NinshinScreen'
+import NinkatsuScreen from '../screen/BiyoriScreens/NinkatsuScreen'
+import KosodateScreen from '../screen/BiyoriScreens/KosodateScreen'
+import HapisapoScreen from '../screen/BiyoriScreens/HapisapoScreen'
+import HensyushituScreen from '../screen/BiyoriScreens/HensyushituScreen'
 import Color from '../../config/color.json'
 import Value from '../../config/value.json'
 

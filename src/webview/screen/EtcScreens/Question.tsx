@@ -1,7 +1,7 @@
 import React from 'react'
 import { WebView } from 'react-native'
 
-class Question extends React.Component {
+class Question extends React.Component<any> {
   render() {
     return (
       <WebView

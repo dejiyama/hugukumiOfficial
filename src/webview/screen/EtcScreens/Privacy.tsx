@@ -1,7 +1,7 @@
 import React from 'react'
 import { WebView } from 'react-native'
 
-class Privacy extends React.Component {
+class Privacy extends React.Component<any> {
   render() {
     return (
       <WebView

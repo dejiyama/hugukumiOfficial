@@ -1,7 +1,7 @@
 import React from 'react'
 import { WebView } from 'react-native'
 
-class Guido extends React.Component {
+class Guido extends React.Component<any> {
   render() {
     return (
       <WebView

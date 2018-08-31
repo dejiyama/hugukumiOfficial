@@ -8,6 +8,8 @@ interface RootObject {
   title_view: Title_view
   header_btn: Header_btn
   header_logo: Header_logo
+  etc_header_btn: Etc_header_btn
+  etc_header_logo: Etc_header_logo
 }
 
 interface Container {
@@ -34,5 +36,19 @@ interface Header_logo {
   width: number
   height: number
   top: number
+  left: number
+}
+
+interface Etc_header_btn {
+  width: number
+  height: number
+  bottom: number
+  left: number
+}
+
+interface Etc_header_logo {
+  width: number
+  height: number
+  bottom: number
   left: number
 }
