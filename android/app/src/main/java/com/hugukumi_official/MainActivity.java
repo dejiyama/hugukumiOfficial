@@ -1,6 +1,9 @@
 package com.hugukumi_official;
 
 import com.facebook.react.ReactActivity;
+import android.os.Bundle;
+
+
 
 public class MainActivity extends ReactActivity {
 
@@ -11,5 +14,17 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "hugukumi_official";
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // ここで1秒間スリープし、スプラッシュを表示させたままにする。
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//        }
+        // スプラッシュthemeを通常themeに変更する
+        setTheme(R.style.AppTheme);
+        setContentView(R.layout.activity_main);
     }
 }
