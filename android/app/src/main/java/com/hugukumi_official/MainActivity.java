@@ -1,6 +1,9 @@
 package com.hugukumi_official;
 
 import com.facebook.react.ReactActivity;
+import android.os.Bundle;
+
+
 
 public class MainActivity extends ReactActivity {
 
@@ -11,5 +14,10 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "hugukumi_official";
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
     }
 }
