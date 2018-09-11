@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, AppState, TouchableOpacity } from 'react-native'
 import PushNotification from 'react-native-push-notification'
-import PushController from '../EtcScreens/PushController'
 import DateTimePicker from 'react-native-modal-datetime-picker'
 
 export default class Timer extends Component<{}, any> {
@@ -9,7 +8,8 @@ export default class Timer extends Component<{}, any> {
     super(props)
     this.state = {
       isVisible: false,
-      chosenDate: Date
+      chosenDate: Date,
+      setupdate: ''
     }
   }
 
@@ -18,11 +18,12 @@ export default class Timer extends Component<{}, any> {
   _hidePicker = () => this.setState({ isVisible: false })
 
   _handlePicked = (time: any) => {
-    this.state = {
+    this.setState({
       isVisible: false,
-      chosenDate: time
-    }
-    console.log('取得した時間', time)
+      chosenDate: time,
+      setupdate: new Date(time).toISOString()
+    })
+    console.log(this.state.setupdate)
   }
 
   componentDidMount() {
@@ -33,7 +34,7 @@ export default class Timer extends Component<{}, any> {
     AppState.removeEventListener('change', this.handleAppStateChange)
   }
 
-  handleAppStateChange(appState: any) {
+  handleAppStateChange = (appState: any) => {
     if (appState === 'background') {
       let setuptime = new Date(this.state.chosenDate)
       PushNotification.localNotificationSchedule({
@@ -45,10 +46,12 @@ export default class Timer extends Component<{}, any> {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.container}>chose your time</Text>
+      <View>
+        <Text style={styles.title}>サプリタイマー</Text>
         <TouchableOpacity onPress={this._showPicker}>
-          <Text>Show DatePicker</Text>
+          <View style={styles.label}>
+            <Text>{this.state.setupdate}</Text>
+          </View>
         </TouchableOpacity>
         <DateTimePicker
           isVisible={this.state.isVisible}
@@ -56,25 +59,23 @@ export default class Timer extends Component<{}, any> {
           onCancel={this._hidePicker}
           mode={'time'}
         />
-        <PushController />
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+  title: {
+    top: 15,
+    marginTop: 50
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  picker: {
-    width: 100
+  label: {
+    backgroundColor: 'white',
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    width: 100,
+    margin: 0,
+    padding: 0,
+    left: 250
   }
 })

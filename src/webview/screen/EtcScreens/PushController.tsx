@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { TouchableOpacity, Text } from 'react-native'
+import { Component } from 'react'
+
 import PushNotification from 'react-native-push-notification'
 
 export default class PushController extends Component {
@@ -11,10 +11,6 @@ export default class PushController extends Component {
     })
   }
   render() {
-    return (
-      <TouchableOpacity>
-        <Text>R</Text>
-      </TouchableOpacity>
-    )
+    return null
   }
 }
