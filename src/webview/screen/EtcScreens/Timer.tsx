@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, AppState, TouchableOpacity } from 'react-native'
 import PushNotification from 'react-native-push-notification'
 import DateTimePicker from 'react-native-modal-datetime-picker'
-
+import moment from 'moment'
+import PushController from '../EtcScreens/PushController'
 export default class Timer extends Component<{}, any> {
   constructor(props: any) {
     super(props)
@@ -21,7 +22,7 @@ export default class Timer extends Component<{}, any> {
     this.setState({
       isVisible: false,
       chosenDate: time,
-      setupdate: new Date(time).toISOString()
+      setupdate: moment(time).format('HH:mm')
     })
     console.log(this.state.setupdate)
   }
@@ -59,6 +60,7 @@ export default class Timer extends Component<{}, any> {
           onCancel={this._hidePicker}
           mode={'time'}
         />
+        <PushController />
       </View>
     )
   }
@@ -70,6 +72,7 @@ const styles = StyleSheet.create({
     marginTop: 50
   },
   label: {
+    alignItems: 'center',
     backgroundColor: 'white',
     borderWidth: 0.5,
     borderColor: '#d6d7da',
