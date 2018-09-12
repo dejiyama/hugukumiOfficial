@@ -22,7 +22,7 @@ export default class Timer extends Component<{}, any> {
     this.setState({
       isVisible: false,
       chosenDate: time,
-      setupdate: moment(time).format('HH:mm')
+      setupdate: time
     })
     console.log(this.state.setupdate)
   }
@@ -51,7 +51,7 @@ export default class Timer extends Component<{}, any> {
         <Text style={styles.title}>サプリタイマー</Text>
         <TouchableOpacity onPress={this._showPicker}>
           <View style={styles.label}>
-            <Text>{this.state.setupdate}</Text>
+            <Text>{moment(this.state.setupdate).format('HH:mm')}</Text>
           </View>
         </TouchableOpacity>
         <DateTimePicker
