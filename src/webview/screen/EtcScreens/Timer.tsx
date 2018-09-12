@@ -9,22 +9,19 @@ interface State {
   chosenDate: Date
 }
 export default class Timer extends Component<{}, State> {
-  constructor(props: any) {
-    super(props)
-    this.state = {
-      isVisible: false,
-      chosenDate: new Date()
-    }
+  state: State = {
+    isVisible: false,
+    chosenDate: new Date()
   }
 
   _showPicker = () => this.setState({ isVisible: true })
 
   _hidePicker = () => this.setState({ isVisible: false })
 
-  _handlePicked = (time: any) => {
+  _handlePicked = (chosenDate: Date) => {
     this.setState({
       isVisible: false,
-      chosenDate: time
+      chosenDate
     })
   }
 
