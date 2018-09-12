@@ -27,4 +27,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     return true
   }
+  func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
+    RCTPushNotificationManager.didRegister(notificationSettings)
+  }
+  
+  // Required for the register event.
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    RCTPushNotificationManager.didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
+  }
+  
+  // Required for the notification event. You must call the completion handler after handling the remote notification.
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    RCTPushNotificationManager.didReceiveRemoteNotification(userInfo, fetchCompletionHandler: completionHandler)
+  }
+  // Required for the registrationError event.
+  
+  func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    try? RCTPushNotificationManager.didFailToRegisterForRemoteNotificationsWithError(error)
+  }
+  
+  // Required for the localNotification event.
+  func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+    RCTPushNotificationManager.didReceive(notification)
+  }
+
+
 }

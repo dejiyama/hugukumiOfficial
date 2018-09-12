@@ -4,13 +4,16 @@ import PushNotification from 'react-native-push-notification'
 import DateTimePicker from 'react-native-modal-datetime-picker'
 import moment from 'moment'
 import PushController from '../EtcScreens/PushController'
-export default class Timer extends Component<{}, any> {
+interface State {
+  isVisible: boolean
+  chosenDate: Date
+}
+export default class Timer extends Component<{}, State> {
   constructor(props: any) {
     super(props)
     this.state = {
       isVisible: false,
-      chosenDate: Date,
-      setupdate: ''
+      chosenDate: new Date()
     }
   }
 
@@ -21,10 +24,8 @@ export default class Timer extends Component<{}, any> {
   _handlePicked = (time: any) => {
     this.setState({
       isVisible: false,
-      chosenDate: time,
-      setupdate: time
+      chosenDate: time
     })
-    console.log(this.state.setupdate)
   }
 
   componentDidMount() {
@@ -37,10 +38,9 @@ export default class Timer extends Component<{}, any> {
 
   handleAppStateChange = (appState: any) => {
     if (appState === 'background') {
-      let setuptime = new Date(this.state.chosenDate)
       PushNotification.localNotificationSchedule({
         message: '飲み忘れていませんか？',
-        date: setuptime
+        date: this.state.chosenDate
       })
     }
   }
@@ -51,7 +51,7 @@ export default class Timer extends Component<{}, any> {
         <Text style={styles.title}>サプリタイマー</Text>
         <TouchableOpacity onPress={this._showPicker}>
           <View style={styles.label}>
-            <Text>{moment(this.state.setupdate).format('HH:mm')}</Text>
+            <Text>{moment(this.state.chosenDate).format('HH:mm')}</Text>
           </View>
         </TouchableOpacity>
         <DateTimePicker
