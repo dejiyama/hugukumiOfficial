@@ -1,12 +1,13 @@
 import React from 'react'
 import { View, StyleSheet, Text, TouchableHighlight } from 'react-native'
+import Timer from '../EtcScreens/Timer'
 
 class Item extends React.Component<{ navigation: any }> {
   moveMypage = () => this.props.navigation.navigate('Mypage')
 
   moveGuide = () => this.props.navigation.navigate('Guide')
 
-  moveHighlight = () => this.props.navigation.navigate('About')
+  moveTimer = () => this.props.navigation.navigate('Timer')
 
   moveQuestion = () => this.props.navigation.navigate('Question')
 
@@ -24,9 +25,7 @@ class Item extends React.Component<{ navigation: any }> {
           <Text>購入ガイド</Text>
         </TouchableHighlight>
 
-        <TouchableHighlight onPress={this.moveAbout} style={styles.page}>
-          <Text>サプリタイマー</Text>
-        </TouchableHighlight>
+        <Timer />
 
         <TouchableHighlight onPress={this.moveQuestion} style={styles.page}>
           <Text>お問い合わせ</Text>

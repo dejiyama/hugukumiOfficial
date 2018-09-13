@@ -8,7 +8,6 @@ import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
 import Color from './src/config/color.json'
 import Biyoriheader from './src/elements/Biyoriheader'
-import Etceteraheader from 'src/elements/Etceteraheader'
 const HomeStack = createStackNavigator({
   Home: { screen: HomeScreen }
 })
