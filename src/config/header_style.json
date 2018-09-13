@@ -11,10 +11,16 @@
     "alignItems": "center",
     "backgroundColor": "#F7F7F7"
   },
-  "header_btn": {
+  "header_btn_goback": {
     "width": 26,
     "height": 26,
     "top": 8
+  },
+  "header_btn_cart": {
+    "width": 26,
+    "height": 26,
+    "top": 8,
+    "left": 190
   },
   "header_logo": {
     "width": 100,
