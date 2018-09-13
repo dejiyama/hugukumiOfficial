@@ -11,6 +11,7 @@ interface RootObject {
   header_logo: Header_logo
   etc_header_btn: Etc_header_btn
   etc_header_logo: Etc_header_logo
+  etc_title_view: Etc_title_view
 }
 
 interface Container {
@@ -51,6 +52,14 @@ interface Header_logo {
   height: number
   top: number
   left: number
+}
+interface Etc_title_view {
+  height: number
+  paddingLeft: number
+  paddingRight: number
+  flexDirection: undefined
+  alignItems: undefined
+  backgroundColor: string
 }
 
 interface Etc_header_btn {

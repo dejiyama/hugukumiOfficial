@@ -6,18 +6,32 @@ import BiyoriScreen from './src/webview/screen/BiyoriScreen'
 import LineupScreen from './src/webview/screen/LineupScreen'
 import VoiceScreen from './src/webview/screen/VoiceScreen'
 import EtceteraScreen from './src/webview/screen/EtceteraScreen'
+import CartScreen from './src/webview/screen/CartScreen'
 import Color from './src/config/color.json'
 import Biyoriheader from './src/elements/Biyoriheader'
+
+const CartStack = createStackNavigator({
+  Cart: {
+    screen: CartScreen,
+    navigationOptions: {
+      header: null
+    }
+  }
+})
+
 const HomeStack = createStackNavigator({
-  Home: { screen: HomeScreen }
+  Home: { screen: HomeScreen },
+  Cart: { screen: CartStack }
 })
 
 const LineupStack = createStackNavigator({
-  Lineup: { screen: LineupScreen }
+  Lineup: { screen: LineupScreen },
+  Cart: { screen: CartStack }
 })
 
 const VoiceStack = createStackNavigator({
-  Voice: { screen: VoiceScreen }
+  Voice: { screen: VoiceScreen },
+  Cart: { screen: CartStack }
 })
 
 const BiyoriStack = createStackNavigator({
@@ -25,9 +39,17 @@ const BiyoriStack = createStackNavigator({
     screen: BiyoriScreen,
     navigationOptions: ({ navigation }: any) => {
       return {
-        header: <Biyoriheader onClickBack={navigation.getParam('onClickBack')} />
+        header: (
+          <Biyoriheader
+            onClickCart={() => navigation.navigate('Cart')}
+            onClickBack={navigation.getParam('onClickBack')}
+          />
+        )
       }
     }
+  },
+  Cart: {
+    screen: CartStack
   }
 })
 
@@ -37,6 +59,9 @@ const EtceteraStack = createStackNavigator({
     navigationOptions: {
       header: null
     }
+  },
+  Cart: {
+    screen: CartStack
   }
 })
 

@@ -39,5 +39,13 @@
     "height": 20,
     "bottom":4,
     "left": 3.5
+  },
+  "etc_title_view": {
+    "height": 60,
+    "paddingLeft": 41,
+    "paddingRight": 15,
+    "flexDirection": "row",
+    "alignItems": "center",
+    "backgroundColor": "#F7F7F7"
   }
 }
