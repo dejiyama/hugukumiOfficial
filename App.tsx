@@ -10,28 +10,19 @@ import CartScreen from './src/webview/screen/CartScreen'
 import Color from './src/config/color.json'
 import Biyoriheader from './src/elements/Biyoriheader'
 
-const CartStack = createStackNavigator({
-  Cart: {
-    screen: CartScreen,
-    navigationOptions: {
-      header: null
-    }
-  }
-})
-
 const HomeStack = createStackNavigator({
   Home: { screen: HomeScreen },
-  Cart: { screen: CartStack }
+  Cart: { screen: CartScreen }
 })
 
 const LineupStack = createStackNavigator({
   Lineup: { screen: LineupScreen },
-  Cart: { screen: CartStack }
+  Cart: { screen: CartScreen }
 })
 
 const VoiceStack = createStackNavigator({
   Voice: { screen: VoiceScreen },
-  Cart: { screen: CartStack }
+  Cart: { screen: CartScreen }
 })
 
 const BiyoriStack = createStackNavigator({
@@ -49,7 +40,7 @@ const BiyoriStack = createStackNavigator({
     }
   },
   Cart: {
-    screen: CartStack
+    screen: CartScreen
   }
 })
 
@@ -61,7 +52,7 @@ const EtceteraStack = createStackNavigator({
     }
   },
   Cart: {
-    screen: CartStack
+    screen: CartScreen
   }
 })
 
