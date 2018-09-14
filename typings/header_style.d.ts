@@ -23,40 +23,37 @@ interface Title_view {
   height: number
   paddingLeft: number
   paddingRight: number
+  paddingTop: number
   flexDirection: undefined
   alignItems: undefined
+  justifyContent: string
   backgroundColor: string
 }
 
 interface Header_btn_goback {
   width: number
   height: number
-  top: number
 }
 
 interface Header_btn_cart {
   width: number
   height: number
-  top: number
-  left: number
 }
 
 interface Header_btn {
   width: number
   height: number
-  top: number
 }
 
 interface Header_logo {
   width: number
   height: number
-  top: number
-  left: number
 }
 interface Etc_title_view {
   height: number
   paddingLeft: number
   paddingRight: number
+  paddingTop: number
   flexDirection: undefined
   alignItems: undefined
   backgroundColor: string
@@ -65,13 +62,11 @@ interface Etc_title_view {
 interface Etc_header_btn {
   width: number
   height: number
-  bottom: number
-  left: number
 }
-
 interface Etc_header_logo {
   width: number
   height: number
-  bottom: number
-  left: number
+  alignItems: string
+  justfyContent: string
+  flexDirection: string
 }
