@@ -11,22 +11,10 @@ interface RootObject {
   header_logo: Header_logo
   etc_header_btn: Etc_header_btn
   etc_header_logo: Etc_header_logo
-  etc_title_view: Etc_title_view
 }
 
 interface Container {
   flex: number
-  backgroundColor: string
-}
-
-interface Title_view {
-  height: number
-  paddingLeft: number
-  paddingRight: number
-  paddingTop: number
-  flexDirection: undefined
-  alignItems: undefined
-  justifyContent: string
   backgroundColor: string
 }
 
@@ -49,7 +37,7 @@ interface Header_logo {
   width: number
   height: number
 }
-interface Etc_title_view {
+interface Title_view {
   height: number
   paddingLeft: number
   paddingRight: number

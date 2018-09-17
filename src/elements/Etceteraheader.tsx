@@ -9,11 +9,14 @@ interface Props {
 class Etceteraheader extends React.Component<Props> {
   render() {
     return (
-      <View style={header_style.etc_title_view}>
+      <View style={header_style.title_view}>
+        <View style={{ flex: 1 }} />
         <Image source={require('../images/header_logo.png')} style={header_style.header_logo} />
-        <TouchableOpacity onPress={this.props.onClickCart}>
-          <Image source={require('../images/header_btn_cart.png')} style={header_style.header_btn_cart} />
-        </TouchableOpacity>
+        <View style={{ flex: 1, alignItems: 'flex-end' }}>
+          <TouchableOpacity onPress={this.props.onClickCart}>
+            <Image source={require('../images/header_btn_cart.png')} style={header_style.header_btn_cart} />
+          </TouchableOpacity>
+        </View>
       </View>
     )
   }
