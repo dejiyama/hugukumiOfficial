@@ -25,16 +25,8 @@ const Etcetera = StackNavigator(
   {
     navigationOptions: ({ navigation }: any) => {
       return {
-        headerBackImage: (
-          <View style={{ paddingLeft: 15 }}>
-            <Image source={require('../../images/header_btn_goback.png')} style={{ width: 26, height: 26 }} />
-          </View>
-        ),
-        headerTitle: <Image source={require('../../images/header_logo.png')} style={header_style.header_logo} />,
-        headerRight: (
-          <TouchableOpacity onPress={() => navigation.navigate('Cart')} style={{ paddingRight: 15 }}>
-            <Image source={require('../../images/header_btn_cart.png')} style={header_style.header_btn_cart} />
-          </TouchableOpacity>
+        header: (
+          <Etceteraheader onClickCart={() => navigation.navigate('Cart')} onClickBackpage={() => navigation.goBack()} />
         )
       }
     }

@@ -7,7 +7,7 @@
     "height": 60,
     "paddingLeft": 15,
     "paddingRight": 15,
-    "paddingTop": 24,
+    "paddingTop": 15,
     "flexDirection": "row",
     "alignItems": "center",
     "justifyContent": "space-between",
