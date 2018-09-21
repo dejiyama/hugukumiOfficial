@@ -41,7 +41,6 @@ interface Title_view {
   height: number
   paddingLeft: number
   paddingRight: number
-  paddingTop: number
   flexDirection: undefined
   alignItems: undefined
   backgroundColor: string
