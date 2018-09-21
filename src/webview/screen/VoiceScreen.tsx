@@ -5,7 +5,9 @@ import Voiceheader from '../../elements/Voiceheader'
 class Voice extends React.Component {
   static navigationOptions = ({ navigation }: any) => {
     return {
-      header: <Voiceheader onClickBack={navigation.getParam('onClickBack')} />
+      header: (
+        <Voiceheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+      )
     }
   }
   webViewRef = React.createRef<WebView>()

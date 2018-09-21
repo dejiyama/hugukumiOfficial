@@ -5,7 +5,9 @@ import Homeheader from '../../elements/Homeheader'
 class Home extends React.Component<any> {
   static navigationOptions = ({ navigation }: any) => {
     return {
-      header: <Homeheader onClickBack={navigation.getParam('onClickBack')} />
+      header: (
+        <Homeheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+      )
     }
   }
   webViewRef = React.createRef<WebView>()

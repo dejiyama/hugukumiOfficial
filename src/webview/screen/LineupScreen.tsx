@@ -5,7 +5,12 @@ import Lineupheader from '../../elements/Lineupheader'
 class Lineup extends React.Component {
   static navigationOptions = ({ navigation }: any) => {
     return {
-      header: <Lineupheader onClickBack={navigation.getParam('onClickBack')} />
+      header: (
+        <Lineupheader
+          onClickBack={navigation.getParam('onClickBack')}
+          onClickCart={() => navigation.navigate('Cart')}
+        />
+      )
     }
   }
   webViewRef = React.createRef<WebView>()
