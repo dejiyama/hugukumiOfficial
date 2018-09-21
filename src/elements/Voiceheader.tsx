@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableOpacity, View, Image } from 'react-native'
+import { TouchableOpacity, View, Image, StyleSheet, Platform } from 'react-native'
 import header_style from '../config/header_style.json'
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 class Voiceheader extends React.Component<Props> {
   render() {
     return (
-      <View style={header_style.title_view}>
+      <View style={styles.title_view}>
         <TouchableOpacity onPress={this.props.onClickBack}>
           <Image source={require('../images/header_btn_goback.png')} style={header_style.header_btn_goback} />
         </TouchableOpacity>
@@ -22,4 +22,17 @@ class Voiceheader extends React.Component<Props> {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  title_view: {
+    height: 60,
+    paddingLeft: 15,
+    paddingRight: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#F7F7F7',
+    paddingTop: Platform.OS === 'ios' ? 15 : 0
+  }
+})
 export default Voiceheader
