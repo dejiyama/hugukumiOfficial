@@ -10,8 +10,13 @@
     "storybook": "storybook start -p 7007 --metro-config $PWD/rn-cli.config.js"
   },
   "dependencies": {
+    "@types/react-native-push-notification": "^3.0.2",
+    "@types/react-navigation": "^2.0.16",
+    "moment": "^2.22.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
+    "react-native-modal-datetime-picker": "^6.0.0",
+    "react-native-push-notification": "^3.1.1",
     "react-navigation": "^2.11.2"
   },
   "devDependencies": {

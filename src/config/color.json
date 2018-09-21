@@ -1,0 +1,14 @@
+{
+    "tabBarOptions": {
+      "active": "#000000",
+      "activeBackground": "#FFFFFF",
+      "inactive": "#D7DBDD",
+      "inactiveBackground": "#FFFFFF"
+    },
+    "indicatorStyle":{
+        "backgroundColor": "#e91e63"
+    },
+    "style": {
+        "backgroundColor": "#F8F9F9"
+    }
+}
