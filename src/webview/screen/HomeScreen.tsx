@@ -1,15 +1,20 @@
 import React from 'react'
-import { WebView } from 'react-native'
+import { WebView, StyleSheet } from 'react-native'
 import Homeheader from '../../elements/Homeheader'
 
 class Home extends React.Component<any> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
-        <Homeheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+        <Homeheader
+          onClickBack={navigation.getParam('onClickBack')}
+          onClickCart={() => navigation.navigate('Cart')}
+          style={this.backButtonEnabled ? styles.navButton : styles.disabledButton}
+        />
       )
     }
   }
+
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -26,6 +31,7 @@ class Home extends React.Component<any> {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -36,6 +42,19 @@ class Home extends React.Component<any> {
       />
     )
   }
+  onNavigationStateChange = ({ navState }: any) => {
+    this.setState({
+      backButtonEnabled: navState.canGoBack
+    })
+  }
 }
 
+const styles = StyleSheet.create({
+  disabledButton: {
+    backgroundColor: 'black'
+  },
+  navButton: {
+    backgroundColor: 'red'
+  }
+})
 export default Home
