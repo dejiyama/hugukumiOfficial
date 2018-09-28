@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 import RootNavigation from './src/RootNavigation'
 
-class App extends React.Component<Component> {
+class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.safeArea}>

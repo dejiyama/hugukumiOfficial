@@ -5,7 +5,6 @@ import header_style from '../config/header_style.json'
 interface Props {
   onClickBack: () => void
   onClickCart: () => void
-  HideBackButton: () => void
 }
 
 class Homeheader extends React.Component<Props> {

@@ -6,11 +6,7 @@ class Home extends React.Component<Component> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
-        <Homeheader
-          onClickBack={navigation.getParam('onClickBack')}
-          onClickCart={() => navigation.navigate('Cart')}
-          HideBackButton={navigation.getParam('HideBackButton')}
-        />
+        <Homeheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
       )
     }
   }
@@ -20,7 +16,6 @@ class Home extends React.Component<Component> {
   constructor(props: any) {
     super(props)
     props.navigation.setParams({ onClickBack: this.onClickBack })
-    props.navigation.setParams({ HideBackButton: this.HideBackButton })
   }
 
   onClickBack = () => {
@@ -28,8 +23,6 @@ class Home extends React.Component<Component> {
       this.webViewRef.current.goBack()
     }
   }
-
-  HideBackButton = () => {}
 
   render() {
     console.log(this.webViewRef)
@@ -47,7 +40,7 @@ class Home extends React.Component<Component> {
     )
   }
   onNavigationStateChange = (navState: any) => {
-    this.setState({
+    this.props.navigation.setParams({
       backButtonEnabled: navState.canGoBack
     })
   }
