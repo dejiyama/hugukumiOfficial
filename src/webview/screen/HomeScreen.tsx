@@ -1,8 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { NavigationScreenProp, NavigationRoute } from 'react-navigation'
 import { WebView } from 'react-native'
 import Homeheader from '../../elements/Homeheader'
 
-class Home extends React.Component<Component> {
+type Props = {
+  navigation: NavigationScreenProp<NavigationRoute>
+}
+
+class Home extends React.Component<Props> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
@@ -25,7 +30,7 @@ class Home extends React.Component<Component> {
   }
 
   render() {
-    console.log(this.webViewRef)
+    console.log(this.props.navigation)
     return (
       <WebView
         onNavigationStateChange={this.onNavigationStateChange}
