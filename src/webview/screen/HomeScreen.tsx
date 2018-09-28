@@ -1,15 +1,15 @@
-import React from 'react'
-import { WebView, StyleSheet } from 'react-native'
+import React, { Component } from 'react'
+import { WebView } from 'react-native'
 import Homeheader from '../../elements/Homeheader'
 
-class Home extends React.Component<any> {
+class Home extends React.Component<Component> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
         <Homeheader
           onClickBack={navigation.getParam('onClickBack')}
           onClickCart={() => navigation.navigate('Cart')}
-          style={this.backButtonEnabled ? styles.navButton : styles.disabledButton}
+          HideBackButton={navigation.getParam('HideBackButton')}
         />
       )
     }
@@ -20,6 +20,7 @@ class Home extends React.Component<any> {
   constructor(props: any) {
     super(props)
     props.navigation.setParams({ onClickBack: this.onClickBack })
+    props.navigation.setParams({ HideBackButton: this.HideBackButton })
   }
 
   onClickBack = () => {
@@ -28,7 +29,10 @@ class Home extends React.Component<any> {
     }
   }
 
+  HideBackButton = () => {}
+
   render() {
+    console.log(this.webViewRef)
     return (
       <WebView
         onNavigationStateChange={this.onNavigationStateChange}
@@ -42,19 +46,10 @@ class Home extends React.Component<any> {
       />
     )
   }
-  onNavigationStateChange = ({ navState }: any) => {
+  onNavigationStateChange = (navState: any) => {
     this.setState({
       backButtonEnabled: navState.canGoBack
     })
   }
 }
-
-const styles = StyleSheet.create({
-  disabledButton: {
-    backgroundColor: 'black'
-  },
-  navButton: {
-    backgroundColor: 'red'
-  }
-})
 export default Home
