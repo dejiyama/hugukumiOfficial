@@ -1,17 +1,17 @@
 import React from 'react'
-import { NavigationScreenProp, NavigationRoute } from 'react-navigation'
+import { NavigationScreenProps } from 'react-navigation'
 import { WebView } from 'react-native'
 import Homeheader from '../../elements/Homeheader'
 
-type Props = {
-  navigation: NavigationScreenProp<NavigationRoute>
-}
-
-class Home extends React.Component<Props> {
+class Home extends React.Component<NavigationScreenProps> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
-        <Homeheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+        <Homeheader
+          onClickBack={navigation.getParam('onClickBack')}
+          onClickCart={() => navigation.navigate('Cart')}
+          hideBackbutton={() => navigation.getParam('onNavigationStateChange')}
+        />
       )
     }
   }
@@ -30,7 +30,7 @@ class Home extends React.Component<Props> {
   }
 
   render() {
-    console.log(this.props.navigation)
+    console.log(this.props.navigation.state.params)
     return (
       <WebView
         onNavigationStateChange={this.onNavigationStateChange}

@@ -5,13 +5,13 @@ import header_style from '../config/header_style.json'
 interface Props {
   onClickBack: () => void
   onClickCart: () => void
+  hideBackbutton: () => void
 }
 
 class Homeheader extends React.Component<Props> {
-  state = {
-    backButtonEnabled: false
-  }
+  state = { backButtonEnabled: false }
   render() {
+    console.log(this.props.hideBackbutton)
     return (
       <View style={header_style.title_view}>
         <TouchableOpacity
