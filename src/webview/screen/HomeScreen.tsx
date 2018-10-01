@@ -10,7 +10,7 @@ class Home extends React.Component<NavigationScreenProps> {
         <Homeheader
           onClickBack={navigation.getParam('onClickBack')}
           onClickCart={() => navigation.navigate('Cart')}
-          hideBackbutton={() => navigation.getParam('onNavigationStateChange')}
+          hideBackbutton={() => navigation.getParam('backButtonEnabled')}
         />
       )
     }
@@ -30,7 +30,7 @@ class Home extends React.Component<NavigationScreenProps> {
   }
 
   render() {
-    console.log(this.props.navigation.state.params)
+    console.log('HomseScrren', this.props.navigation.state.params)
     return (
       <WebView
         onNavigationStateChange={this.onNavigationStateChange}

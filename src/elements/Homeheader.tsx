@@ -9,9 +9,11 @@ interface Props {
 }
 
 class Homeheader extends React.Component<Props> {
-  state = { backButtonEnabled: false }
+  state = {
+    backButtonEnabled: false
+  }
   render() {
-    console.log(this.props.hideBackbutton)
+    console.log('Homeheader', this.state.backButtonEnabled)
     return (
       <View style={header_style.title_view}>
         <TouchableOpacity
