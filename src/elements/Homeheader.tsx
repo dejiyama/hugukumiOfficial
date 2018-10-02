@@ -5,22 +5,20 @@ import header_style from '../config/header_style.json'
 interface Props {
   onClickBack: () => void
   onClickCart: () => void
-  hideBackbutton: () => void
+  hideBackbutton: boolean
 }
 
 class Homeheader extends React.Component<Props> {
-  state = {
-    backButtonEnabled: false
-  }
   render() {
-    console.log('Homeheader', this.state.backButtonEnabled)
+    if (this.props.hideBackbutton === true) {
+    }
     return (
       <View style={header_style.title_view}>
-        <TouchableOpacity
-          onPress={this.props.onClickBack}
-          style={this.state.backButtonEnabled ? styles.navButton : styles.disabledButton}
-        >
-          <Image source={require('../images/header_btn_goback.png')} style={header_style.header_btn_goback} />
+        <TouchableOpacity onPress={this.props.onClickBack}>
+          <Image
+            source={require('../images/header_btn_goback.png')}
+            style={this.props.hideBackbutton ? header_style.header_btn_goback : styles.disabledButton}
+          />
         </TouchableOpacity>
         <Image source={require('../images/header_logo.png')} style={header_style.header_logo} />
         <TouchableOpacity onPress={this.props.onClickCart}>
@@ -36,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red'
   },
   disabledButton: {
-    backgroundColor: 'black'
+    width: 0
   }
 })
 

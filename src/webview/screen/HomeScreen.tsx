@@ -10,7 +10,7 @@ class Home extends React.Component<NavigationScreenProps> {
         <Homeheader
           onClickBack={navigation.getParam('onClickBack')}
           onClickCart={() => navigation.navigate('Cart')}
-          hideBackbutton={() => navigation.getParam('backButtonEnabled')}
+          hideBackbutton={navigation.getParam('backButtonEnabled')}
         />
       )
     }
