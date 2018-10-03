@@ -10,12 +10,6 @@ interface Props {
 
 class Homeheader extends React.Component<Props> {
   render() {
-    if (this.props.showBackbutton === true) {
-      ;<TouchableOpacity onPress={this.props.onClickBack}>
-        <Image source={require('../images/header_btn_goback.png')} style={header_style.header_btn_goback} />
-      </TouchableOpacity>
-    } else {
-    }
     return (
       <View style={header_style.title_view}>
         <TouchableOpacity onPress={this.props.onClickBack} style={header_style.header_btn_goback}>
