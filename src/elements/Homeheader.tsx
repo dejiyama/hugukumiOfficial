@@ -10,6 +10,7 @@ interface Props {
 
 class Homeheader extends React.Component<Props> {
   render() {
+    console.log('homeheader', this.props.showBackbutton)
     return (
       <View style={header_style.title_view}>
         <View style={header_style.header_btn_goback}>

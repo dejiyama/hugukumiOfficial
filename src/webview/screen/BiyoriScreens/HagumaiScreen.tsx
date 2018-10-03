@@ -1,8 +1,9 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import inject from './InjectJS'
 
-class HagumaiScreen extends React.Component<any> {
+class HagumaiScreen extends React.Component<NavigationScreenProps> {
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -19,8 +20,10 @@ class HagumaiScreen extends React.Component<any> {
   }
 
   render() {
+    console.log('HagumaiScrren', this.props.navigation.state.params)
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -30,6 +33,11 @@ class HagumaiScreen extends React.Component<any> {
         source={{ uri: 'https://www.hugkumiplus.net/biyori/mainichi/' }}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 

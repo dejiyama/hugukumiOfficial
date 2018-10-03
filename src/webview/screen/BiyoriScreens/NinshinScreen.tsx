@@ -21,6 +21,7 @@ class NinshinScreen extends React.Component<any> {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -30,6 +31,11 @@ class NinshinScreen extends React.Component<any> {
         source={{ uri: 'https://www.hugkumiplus.net/biyori/ninshin/' }}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 

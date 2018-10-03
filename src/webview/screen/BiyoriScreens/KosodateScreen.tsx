@@ -20,6 +20,7 @@ class KosodateScreen extends React.Component<any> {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         ref={this.webViewRef}
         javaScriptEnabled={true}
@@ -29,6 +30,11 @@ class KosodateScreen extends React.Component<any> {
         startInLoadingState={true}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 
