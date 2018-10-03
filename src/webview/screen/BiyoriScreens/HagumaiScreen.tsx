@@ -35,7 +35,7 @@ class HagumaiScreen extends React.Component<NavigationScreenProps> {
     )
   }
   onNavigationStateChange = (navState: any) => {
-    this.props.navigation.setParams({
+    this.props.navigation.dangerouslyGetParent().setParams({
       backButtonEnabled: navState.canGoBack
     })
   }
