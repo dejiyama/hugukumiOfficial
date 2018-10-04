@@ -3,7 +3,7 @@ import { WebView } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import inject from './InjectJS'
 
-class HagumaiScreen extends React.Component<NavigationScreenProps> {
+class HagumaiScreen extends React.Component<NavigationScreenProps & NavigationScreenPropsPatch> {
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
