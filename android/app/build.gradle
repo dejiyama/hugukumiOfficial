@@ -94,15 +94,21 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
+
+    lintOptions { 
+        checkReleaseBuilds false // Add this
+        abortOnError false
+    }
+    
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "inc.hideandseek.hugukumiofficial.dev"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 6
         versionName "1.0"
-        ndk {
+        ndk { 
             abiFilters "armeabi-v7a", "x86"
         }
     }

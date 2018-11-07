@@ -1,4 +1,5 @@
 import React from 'react'
+import { Image } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import Item from './EtcScreens/Item'
 import About from './EtcScreens/About'
@@ -24,7 +25,11 @@ const Etcetera = StackNavigator(
     navigationOptions: ({ navigation }: any) => {
       return {
         header: (
-          <Etceteraheader onClickCart={() => navigation.navigate('Cart')} onClickBackpage={() => navigation.goBack()} />
+          <Etceteraheader
+            onClickCart={() => navigation.navigate('Cart')}
+            onClickBackpage={() => navigation.goBack()}
+            showBackbutton={navigation.getParam('backButtonEnabled')}
+          />
         )
       }
     }
