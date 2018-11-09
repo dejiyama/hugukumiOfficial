@@ -14,6 +14,7 @@ class Item extends React.Component<{ navigation: any }> {
   moveAbout = () => this.props.navigation.navigate('About')
 
   movePrivacy = () => this.props.navigation.navigate('Privacy')
+
   render() {
     return (
       <View style={styles.container}>
