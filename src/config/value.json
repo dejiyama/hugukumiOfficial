@@ -1,7 +1,6 @@
 {
     "position":{
-        "fontWeight": "bold",
-        "fontSize": 12,
+        "fontSize": 16,
         "padding": 0,
         "margin": 0
     }

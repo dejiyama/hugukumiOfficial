@@ -49,6 +49,7 @@ const Biyori = createMaterialTopTabNavigator(
   },
   {
     tabBarOptions: {
+      scrollEnabled: true,
       activeTintColor: Color.tabBarOptions.active,
       inactiveTintColor: Color.tabBarOptions.inactive,
       indicatorStyle: {
