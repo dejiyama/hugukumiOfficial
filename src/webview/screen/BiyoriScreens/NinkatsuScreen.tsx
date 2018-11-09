@@ -1,8 +1,9 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import Inject from './InjectJS'
 
-class NinkatsuScreen extends React.Component<any> {
+class NinkatsuScreen extends React.Component<NavigationScreenProps & NavigationScreenPropsPatch> {
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -21,6 +22,7 @@ class NinkatsuScreen extends React.Component<any> {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         ref={this.webViewRef}
         javaScriptEnabled={true}
@@ -30,6 +32,11 @@ class NinkatsuScreen extends React.Component<any> {
         startInLoadingState={true}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.dangerouslyGetParent().setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 

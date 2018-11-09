@@ -1,18 +1,21 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import Lineupheader from '../../elements/Lineupheader'
 
-class Lineup extends React.Component {
+class Lineup extends React.Component<NavigationScreenProps> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
         <Lineupheader
           onClickBack={navigation.getParam('onClickBack')}
           onClickCart={() => navigation.navigate('Cart')}
+          showBackbutton={navigation.getParam('backButtonEnabled')}
         />
       )
     }
   }
+
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -28,6 +31,7 @@ class Lineup extends React.Component {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -37,6 +41,11 @@ class Lineup extends React.Component {
         source={{ uri: 'https://www.hugkumiplus.net/shohin/index.html' }}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 

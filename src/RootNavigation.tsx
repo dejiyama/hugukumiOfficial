@@ -34,6 +34,7 @@ const BiyoriStack = createStackNavigator({
           <Biyoriheader
             onClickCart={() => navigation.navigate('Cart')}
             onClickBack={navigation.getParam('onClickBack')}
+            showBackbutton={navigation.getParam('backButtonEnabled')}
           />
         )
       }

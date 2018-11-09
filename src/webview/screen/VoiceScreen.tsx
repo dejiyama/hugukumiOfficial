@@ -1,12 +1,17 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import Voiceheader from '../../elements/Voiceheader'
 
-class Voice extends React.Component {
+class Voice extends React.Component<NavigationScreenProps> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
-        <Voiceheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+        <Voiceheader
+          onClickBack={navigation.getParam('onClickBack')}
+          onClickCart={() => navigation.navigate('Cart')}
+          showBackbutton={navigation.getParam('backButtonEnabled')}
+        />
       )
     }
   }
@@ -25,6 +30,7 @@ class Voice extends React.Component {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -34,6 +40,11 @@ class Voice extends React.Component {
         source={{ uri: 'https://www.hugkumiplus.net/voice/' }}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 

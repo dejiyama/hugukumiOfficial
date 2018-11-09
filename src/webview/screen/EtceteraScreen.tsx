@@ -9,6 +9,7 @@ import Mypage from './EtcScreens/Mypage'
 import Privacy from './EtcScreens/Privacy'
 import Question from './EtcScreens/Question'
 import Etceteraheader from '../../elements/Etceteraheader'
+
 const Etcetera = StackNavigator(
   {
     Item: { screen: Item },
@@ -24,7 +25,11 @@ const Etcetera = StackNavigator(
     navigationOptions: ({ navigation }: any) => {
       return {
         header: (
-          <Etceteraheader onClickCart={() => navigation.navigate('Cart')} onClickBackpage={() => navigation.goBack()} />
+          <Etceteraheader
+            onClickCart={() => navigation.navigate('Cart')}
+            onClickBackpage={() => navigation.goBack()}
+            showBackbutton={navigation.state.routeName !== 'Item'}
+          />
         )
       }
     }

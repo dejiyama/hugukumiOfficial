@@ -1,15 +1,21 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import Homeheader from '../../elements/Homeheader'
 
-class Home extends React.Component<any> {
+class Home extends React.Component<NavigationScreenProps> {
   static navigationOptions = ({ navigation }: any) => {
     return {
       header: (
-        <Homeheader onClickBack={navigation.getParam('onClickBack')} onClickCart={() => navigation.navigate('Cart')} />
+        <Homeheader
+          onClickBack={navigation.getParam('onClickBack')}
+          onClickCart={() => navigation.navigate('Cart')}
+          showBackbutton={navigation.getParam('backButtonEnabled')}
+        />
       )
     }
   }
+
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -24,8 +30,10 @@ class Home extends React.Component<any> {
   }
 
   render() {
+    console.log('HomseScrren', this.props.navigation.state.params)
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -36,6 +44,10 @@ class Home extends React.Component<any> {
       />
     )
   }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.setParams({
+      backButtonEnabled: navState.canGoBack
+    })
+  }
 }
-
 export default Home

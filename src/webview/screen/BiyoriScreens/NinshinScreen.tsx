@@ -1,8 +1,9 @@
 import React from 'react'
 import { WebView } from 'react-native'
+import { NavigationScreenProps } from 'react-navigation'
 import inject from './InjectJS'
 
-class NinshinScreen extends React.Component<any> {
+class NinshinScreen extends React.Component<NavigationScreenProps & NavigationScreenPropsPatch> {
   webViewRef = React.createRef<WebView>()
 
   constructor(props: any) {
@@ -21,6 +22,7 @@ class NinshinScreen extends React.Component<any> {
   render() {
     return (
       <WebView
+        onNavigationStateChange={this.onNavigationStateChange}
         originWhitelist={['*']}
         startInLoadingState={true}
         ref={this.webViewRef}
@@ -30,6 +32,11 @@ class NinshinScreen extends React.Component<any> {
         source={{ uri: 'https://www.hugkumiplus.net/biyori/ninshin/' }}
       />
     )
+  }
+  onNavigationStateChange = (navState: any) => {
+    this.props.navigation.dangerouslyGetParent().setParams({
+      backButtonEnabled: navState.canGoBack
+    })
   }
 }
 
