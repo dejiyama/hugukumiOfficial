@@ -57,7 +57,10 @@ const Biyori = createMaterialTopTabNavigator(
       style: {
         backgroundColor: Color.style.backgroundColor
       },
-      labelStyle: Value.position
+      labelStyle: Value.position,
+      tabStyle: {
+        width: 100
+      }
     }
   }
 )
