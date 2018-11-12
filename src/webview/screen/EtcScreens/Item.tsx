@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Text, TouchableHighlight } from 'react-native'
+import { View, StyleSheet, TouchableHighlight, Image } from 'react-native'
 import Timer from '../EtcScreens/Timer'
 
 class Item extends React.Component<{ navigation: any }> {
@@ -19,25 +19,25 @@ class Item extends React.Component<{ navigation: any }> {
     return (
       <View style={styles.container}>
         <TouchableHighlight onPress={this.moveMypage} style={styles.page}>
-          <Text>マイページ</Text>
+          <Image source={require('../../../images/mypage.png')} />
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.moveGuide} style={styles.page}>
-          <Text>購入ガイド</Text>
+          <Image source={require('../../../images/guide.png')} />
         </TouchableHighlight>
 
         <Timer />
 
         <TouchableHighlight onPress={this.moveQuestion} style={styles.page}>
-          <Text>お問い合わせ</Text>
+          <Image source={require('../../../images/question.png')} />
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.moveAbout} style={styles.page}>
-          <Text>会社概要</Text>
+          <Image source={require('../../../images/about.png')} />
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.movePrivacy} style={styles.page}>
-          <Text>プライバシーポリシー</Text>
+          <Image source={require('../../../images/privacy.png')} />
         </TouchableHighlight>
       </View>
     )
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   page: {
-    marginTop: 50
+    marginTop: 20
   }
 })
 
