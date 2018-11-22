@@ -10,6 +10,7 @@ buildscript {
         }
     }
     dependencies {
+        classpath 'com.google.gms:google-services:4.0.1'
         classpath 'com.android.tools.build:gradle:3.1.2'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -29,6 +30,9 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        maven {
+             url "$rootDir/../node_modules/react-native-repro/sdk-android"
+         }
     }
 }
 

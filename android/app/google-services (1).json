@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "387239959958",
+    "firebase_url": "https://hugukumiofficial-a4fbe.firebaseio.com",
+    "project_id": "hugukumiofficial-a4fbe",
+    "storage_bucket": "hugukumiofficial-a4fbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387239959958:android:5ca472ebb99de971",
+        "android_client_info": {
+          "package_name": "com.hugukumi_official"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387239959958-n6a54qvpocogqmpuqc2518431m42bqhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR75vHRyGxwZfuvSNPrs6daopW94Ol13M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
