@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "387239959958",
-    "firebase_url": "https://hugukumiofficial-a4fbe.firebaseio.com",
-    "project_id": "hugukumiofficial-a4fbe",
-    "storage_bucket": "hugukumiofficial-a4fbe.appspot.com"
+    "project_number": "79063318073",
+    "firebase_url": "https://hugukumiofficial-19f35.firebaseio.com",
+    "project_id": "hugukumiofficial-19f35",
+    "storage_bucket": "hugukumiofficial-19f35.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:387239959958:android:5ca472ebb99de971",
+        "mobilesdk_app_id": "1:79063318073:android:bb3e976c910b150c",
         "android_client_info": {
-          "package_name": "com.hugukumi_official"
+          "package_name": "inc.hideandseek.hugukumiofficial.dev"
         }
       },
       "oauth_client": [
         {
-          "client_id": "387239959958-n6a54qvpocogqmpuqc2518431m42bqhp.apps.googleusercontent.com",
+          "client_id": "79063318073-jgau6t0q8p43619ls6tdas1mertsr2k9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDR75vHRyGxwZfuvSNPrs6daopW94Ol13M"
+          "current_key": "AIzaSyBXiMMo5Fwg3w_1Z8F08JRnUst4x747xco"
         }
       ],
       "services": {
