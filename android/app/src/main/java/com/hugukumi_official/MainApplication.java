@@ -46,7 +46,8 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
 
-    Repro.setup(this, "5bf0b937-4112-4970-88c0-09b64806f02c")
+    Repro.setup(this, "5bf0b937-4112-4970-88c0-09b64806f02c");
     SoLoader.init(this, /* native exopackage */ false);
+    Repro.enablePushNotification("AAAAEmiKfjk:APA91bHNbtM5JcL2mCi4lbyUoDzJoW8juKTNeHYDNEfIt_PVMOZLXtrFJaG2fpNeREnDTt31hdSGbkH0lRUYQ3XKxDKp5IpkL5KvuQ_w8qKRk0y_AqEGbIwfnGVVkUyfwXL4GoBYImhI");
   }
 }
