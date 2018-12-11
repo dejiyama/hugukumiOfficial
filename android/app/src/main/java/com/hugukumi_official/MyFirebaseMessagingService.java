@@ -1,7 +1,8 @@
 package com.hugukumi_official;
 
+import android.annotation.TargetApi;
+import android.app.Notification;
 import io.repro.android.Repro;
-import com.google.firebase.messaging.FirebaseMessagingService;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -9,12 +10,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
-import java.util.Random;
-import android.annotation.TargetApi;
-import java.util.Map;
-import android.R;
-import android.app.Notification;
+import com.google.firebase.messaging.FirebaseMessagingService;
+
 import com.google.firebase.messaging.RemoteMessage;
+
+import java.util.Map;
+import java.util.Random;
 
  public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
