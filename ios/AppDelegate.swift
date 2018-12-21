@@ -42,8 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // setup repro
     Repro.setup("5bf0b937-4112-4970-88c0-09b64806f02c")
     
-    // Start Recording
-    Repro.startRecording()
+    Repro.setLogLevel(RPRLogLevel.debug)
 
     return true
   }
