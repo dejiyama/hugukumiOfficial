@@ -65,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
     RCTPushNotificationManager.didFailToRegisterForRemoteNotificationsWithError(error)
     print("Remote Notification Error: \(error)")
+    
   }
   
   // Required for the localNotification event.
