@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name" translatable="false">hugukumi_official</string>
+    <string name="hugukumi">hugukumi_official</string>
 </resources>

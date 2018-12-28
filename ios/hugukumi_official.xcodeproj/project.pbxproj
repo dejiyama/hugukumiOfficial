@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* hugukumi_officialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* hugukumi_officialTests.m */; };
+		05E680D8D3E2464BAFB1BAA7 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0F2FCA4D11E4523BA860C47 /* Octicons.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -20,7 +21,12 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		16E12A3C1C5448E9B8508DAC /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D39D276A81AD4444A7AE68A8 /* Roboto.ttf */; };
+		222018FC219EB02B00B457B1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222018FB219EB02B00B457B1 /* NotificationService.swift */; };
+		22201900219EB02B00B457B1 /* hugukumiOfficial.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 222018F9219EB02B00B457B1 /* hugukumiOfficial.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22814D70219D7EE3004DDB26 /* ReproSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22814D6F219D7EE3004DDB26 /* ReproSDKResources.bundle */; };
 		22BDC9A72146970000871397 /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDC98B214696F000871397 /* libRCTPushNotification.a */; };
+		2BA77622FE334F3CB4A8786E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FF283486E9744758E77ED47 /* Ionicons.ttf */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
@@ -32,10 +38,22 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* hugukumi_officialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* hugukumi_officialTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		2E2BD620450F4D0FA15E5B1E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63268284E51148AF88525650 /* Zocial.ttf */; };
+		2ED8A473EF644E8BB6CAAAFC /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45D27DC1A2C149948AD8D85E /* MaterialIcons.ttf */; };
+		38AE927EC5694BB1B760962B /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E98E6132647F38237BAC8 /* Feather.ttf */; };
+		46D16B0845CC413F8DA284C9 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F01F213C2FF4FE5A5CE777B /* rubicon-icon-font.ttf */; };
 		5AE43B692120D9F90041774A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE43B682120D9F90041774A /* AppDelegate.swift */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		74320690F0F34CD6BAD1F8F5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08D5F82C8104A7CB1DCCAA6 /* EvilIcons.ttf */; };
+		78A942A4D7EE4B4AA16E02D1 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 013C84C7EFD449C4B7E8B498 /* Roboto_medium.ttf */; };
+		7FC60C7F9548491683D3D97C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B42A92FB86446AB8B673684 /* SimpleLineIcons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8706158A1C26446AB17EF2A0 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A80A96A9304B3A897F753E /* MaterialCommunityIcons.ttf */; };
+		8ACB10CD46DD4E31B7CDEA73 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 701326B6627145C88E11F349 /* Entypo.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B5C473F0C29145BDB82FA93B /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87E40C811C074E01B2D42922 /* Foundation.ttf */; };
+		BE783D0643694CA5A5BFCC9F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11361D70795747C9AADB98A9 /* FontAwesome.ttf */; };
+		FB4E54D756204B6390B84DF8 /* libRPRReproReactBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB2AF2A6DD9478C96FA0BEF /* libRPRReproReactBridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +119,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
+		};
+		222018FE219EB02B00B457B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222018F8219EB02B00B457B1;
+			remoteInfo = hugukumiOfficial;
+		};
+		22814D6D219D7DB5004DDB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7BAFDE0518490FAF346050 /* RPRReproReactBridge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RPRReproReactBridge;
 		};
 		22BDC98A214696F000871397 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -328,6 +360,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		22201904219EB02B00B457B1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22201900219EB02B00B457B1 /* hugukumiOfficial.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -338,6 +384,8 @@
 		00E356EE1AD99517003FC87E /* hugukumi_officialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hugukumi_officialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* hugukumi_officialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hugukumi_officialTests.m; sourceTree = "<group>"; };
+		013C84C7EFD449C4B7E8B498 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		11361D70795747C9AADB98A9 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* hugukumi_official.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hugukumi_official.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,16 +393,36 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hugukumi_official/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hugukumi_official/Info.plist; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1FB2AF2A6DD9478C96FA0BEF /* libRPRReproReactBridge.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRPRReproReactBridge.a; sourceTree = "<group>"; };
+		222018F4219EACBC00B457B1 /* hugukumi_official-tvOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "hugukumi_official-tvOS.entitlements"; path = "hugukumi_official-tvOS/hugukumi_official-tvOS.entitlements"; sourceTree = "<group>"; };
+		222018F9219EB02B00B457B1 /* hugukumiOfficial.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = hugukumiOfficial.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		222018FB219EB02B00B457B1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		222018FD219EB02B00B457B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22814D6F219D7EE3004DDB26 /* ReproSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ReproSDKResources.bundle; path = "../node_modules/react-native-repro/sdk-ios/ReproSDKResources.bundle"; sourceTree = "<group>"; };
+		2297E86321BA4EBD0036455F /* hugukumi_official.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = hugukumi_official.entitlements; path = hugukumi_official/hugukumi_official.entitlements; sourceTree = "<group>"; };
 		22BDC979214696F000871397 /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
+		25A80A96A9304B3A897F753E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* hugukumi_official-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hugukumi_official-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* hugukumi_official-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hugukumi_official-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1E98E6132647F38237BAC8 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		3FF283486E9744758E77ED47 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		45D27DC1A2C149948AD8D85E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		5AE43B672120D9F80041774A /* hugukumi_official-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hugukumi_official-Bridging-Header.h"; sourceTree = "<group>"; };
 		5AE43B682120D9F90041774A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		63268284E51148AF88525650 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		701326B6627145C88E11F349 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7B42A92FB86446AB8B673684 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		87E40C811C074E01B2D42922 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		9F01F213C2FF4FE5A5CE777B /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		D08D5F82C8104A7CB1DCCAA6 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		D39D276A81AD4444A7AE68A8 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		DD7BAFDE0518490FAF346050 /* RPRReproReactBridge.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RPRReproReactBridge.xcodeproj; path = "../node_modules/react-native-repro/ios/RPRReproReactBridge.xcodeproj"; sourceTree = "<group>"; };
+		F0F2FCA4D11E4523BA860C47 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +452,14 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				FB4E54D756204B6390B84DF8 /* libRPRReproReactBridge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222018F6219EB02B00B457B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +571,7 @@
 		13B07FAE1A68108700A75B9A /* hugukumi_official */ = {
 			isa = PBXGroup;
 			children = (
+				2297E86321BA4EBD0036455F /* hugukumi_official.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				5AE43B682120D9F90041774A /* AppDelegate.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -524,6 +601,31 @@
 				2DF0FFE92056DD460020B375 /* libdouble-conversion.a */,
 				2DF0FFEB2056DD460020B375 /* libprivatedata.a */,
 				2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		222018FA219EB02B00B457B1 /* hugukumiOfficial */ = {
+			isa = PBXGroup;
+			children = (
+				222018FB219EB02B00B457B1 /* NotificationService.swift */,
+				222018FD219EB02B00B457B1 /* Info.plist */,
+			);
+			path = hugukumiOfficial;
+			sourceTree = "<group>";
+		};
+		22814D42219D7DB1004DDB26 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				1FB2AF2A6DD9478C96FA0BEF /* libRPRReproReactBridge.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		22814D6A219D7DB3004DDB26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22814D6E219D7DB5004DDB26 /* libRPRReproReactBridge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -579,6 +681,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				DD7BAFDE0518490FAF346050 /* RPRReproReactBridge.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -595,11 +698,16 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				222018F4219EACBC00B457B1 /* hugukumi_official-tvOS.entitlements */,
+				22814D6F219D7EE3004DDB26 /* ReproSDKResources.bundle */,
 				13B07FAE1A68108700A75B9A /* hugukumi_official */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* hugukumi_officialTests */,
+				222018FA219EB02B00B457B1 /* hugukumiOfficial */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				22814D42219D7DB1004DDB26 /* Recovered References */,
+				868D10E6586C4118BDAEA3DC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -613,8 +721,30 @@
 				00E356EE1AD99517003FC87E /* hugukumi_officialTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* hugukumi_official-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* hugukumi_official-tvOSTests.xctest */,
+				222018F9219EB02B00B457B1 /* hugukumiOfficial.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		868D10E6586C4118BDAEA3DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				701326B6627145C88E11F349 /* Entypo.ttf */,
+				D08D5F82C8104A7CB1DCCAA6 /* EvilIcons.ttf */,
+				2E1E98E6132647F38237BAC8 /* Feather.ttf */,
+				11361D70795747C9AADB98A9 /* FontAwesome.ttf */,
+				87E40C811C074E01B2D42922 /* Foundation.ttf */,
+				3FF283486E9744758E77ED47 /* Ionicons.ttf */,
+				25A80A96A9304B3A897F753E /* MaterialCommunityIcons.ttf */,
+				45D27DC1A2C149948AD8D85E /* MaterialIcons.ttf */,
+				F0F2FCA4D11E4523BA860C47 /* Octicons.ttf */,
+				013C84C7EFD449C4B7E8B498 /* Roboto_medium.ttf */,
+				D39D276A81AD4444A7AE68A8 /* Roboto.ttf */,
+				9F01F213C2FF4FE5A5CE777B /* rubicon-icon-font.ttf */,
+				7B42A92FB86446AB8B673684 /* SimpleLineIcons.ttf */,
+				63268284E51148AF88525650 /* Zocial.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -655,15 +785,34 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				22201904219EB02B00B457B1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				222018FF219EB02B00B457B1 /* PBXTargetDependency */,
 			);
 			name = hugukumi_official;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* hugukumi_official.app */;
 			productType = "com.apple.product-type.application";
+		};
+		222018F8219EB02B00B457B1 /* hugukumiOfficial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22201901219EB02B00B457B1 /* Build configuration list for PBXNativeTarget "hugukumiOfficial" */;
+			buildPhases = (
+				222018F5219EB02B00B457B1 /* Sources */,
+				222018F6219EB02B00B457B1 /* Frameworks */,
+				222018F7219EB02B00B457B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hugukumiOfficial;
+			productName = hugukumiOfficial;
+			productReference = 222018F9219EB02B00B457B1 /* hugukumiOfficial.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		2D02E47A1E0B4A5D006451C7 /* hugukumi_official-tvOS */ = {
 			isa = PBXNativeTarget;
@@ -707,23 +856,44 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = LC3FT63869;
+						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = LC3FT63869;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 940;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					222018F8219EB02B00B457B1 = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = LC3FT63869;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LC3FT63869;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LC3FT63869;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -793,6 +963,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 22814D6A219D7DB3004DDB26 /* Products */;
+					ProjectRef = DD7BAFDE0518490FAF346050 /* RPRReproReactBridge.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -800,6 +974,7 @@
 				00E356ED1AD99517003FC87E /* hugukumi_officialTests */,
 				2D02E47A1E0B4A5D006451C7 /* hugukumi_official-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* hugukumi_official-tvOSTests */,
+				222018F8219EB02B00B457B1 /* hugukumiOfficial */,
 			);
 		};
 /* End PBXProject section */
@@ -859,6 +1034,13 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22814D6E219D7DB5004DDB26 /* libRPRReproReactBridge.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRPRReproReactBridge.a;
+			remoteRef = 22814D6D219D7DB5004DDB26 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		22BDC98B214696F000871397 /* libRCTPushNotification.a */ = {
@@ -1092,8 +1274,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22814D70219D7EE3004DDB26 /* ReproSDKResources.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				8ACB10CD46DD4E31B7CDEA73 /* Entypo.ttf in Resources */,
+				74320690F0F34CD6BAD1F8F5 /* EvilIcons.ttf in Resources */,
+				38AE927EC5694BB1B760962B /* Feather.ttf in Resources */,
+				BE783D0643694CA5A5BFCC9F /* FontAwesome.ttf in Resources */,
+				B5C473F0C29145BDB82FA93B /* Foundation.ttf in Resources */,
+				2BA77622FE334F3CB4A8786E /* Ionicons.ttf in Resources */,
+				8706158A1C26446AB17EF2A0 /* MaterialCommunityIcons.ttf in Resources */,
+				2ED8A473EF644E8BB6CAAAFC /* MaterialIcons.ttf in Resources */,
+				05E680D8D3E2464BAFB1BAA7 /* Octicons.ttf in Resources */,
+				78A942A4D7EE4B4AA16E02D1 /* Roboto_medium.ttf in Resources */,
+				16E12A3C1C5448E9B8508DAC /* Roboto.ttf in Resources */,
+				46D16B0845CC413F8DA284C9 /* rubicon-icon-font.ttf in Resources */,
+				7FC60C7F9548491683D3D97C /* SimpleLineIcons.ttf in Resources */,
+				2E2BD620450F4D0FA15E5B1E /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222018F7219EB02B00B457B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1366,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		222018F5219EB02B00B457B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222018FC219EB02B00B457B1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D02E4771E0B4A5D006451C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1184,6 +1396,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* hugukumi_official */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		222018FF219EB02B00B457B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222018F8219EB02B00B457B1 /* hugukumiOfficial */;
+			targetProxy = 222018FE219EB02B00B457B1 /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1210,18 +1427,30 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LC3FT63869;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = hugukumi_officialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hugukumi_official.app/hugukumi_official";
 			};
 			name = Debug;
@@ -1231,15 +1460,26 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = LC3FT63869;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = hugukumi_officialTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hugukumi_official.app/hugukumi_official";
 			};
 			name = Release;
@@ -1247,11 +1487,20 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = hugukumi_official/hugukumi_official.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = LC3FT63869;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../node_modules/react-native-repro/sdk-ios/";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = hugukumi_official/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1261,6 +1510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = inc.hideandseek.hugukumiofficial.dev;
 				PRODUCT_NAME = hugukumi_official;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hugukumi_official-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1271,10 +1521,19 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = hugukumi_official/hugukumi_official.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LC3FT63869;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../node_modules/react-native-repro/sdk-ios/";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = hugukumi_official/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1284,9 +1543,90 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = inc.hideandseek.hugukumiofficial.dev;
 				PRODUCT_NAME = hugukumi_official;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hugukumi_official-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		22201902219EB02B00B457B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LC3FT63869;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = hugukumiOfficial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = inc.hideandseek.hugukumiofficial.dev.hugukumiOfficial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22201903219EB02B00B457B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LC3FT63869;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = hugukumiOfficial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = inc.hideandseek.hugukumiofficial.dev.hugukumiOfficial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1299,11 +1639,21 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "hugukumi_official-tvOS/hugukumi_official-tvOS.entitlements";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LC3FT63869;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = "hugukumi_official-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1325,11 +1675,21 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = "hugukumi_official-tvOS/hugukumi_official-tvOS.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LC3FT63869;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = "hugukumi_official-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1353,8 +1713,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = "hugukumi_official-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1378,8 +1746,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-repro/ios/**",
+				);
 				INFOPLIST_FILE = "hugukumi_official-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1409,8 +1785,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = LC3FT63869;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1452,6 +1829,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = LC3FT63869;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1485,6 +1863,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22201901219EB02B00B457B1 /* Build configuration list for PBXNativeTarget "hugukumiOfficial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22201902219EB02B00B457B1 /* Debug */,
+				22201903219EB02B00B457B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

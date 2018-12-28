@@ -30,7 +30,6 @@ class Home extends React.Component<NavigationScreenProps> {
   }
 
   render() {
-    console.log('HomseScrren', this.props.navigation.state.params)
     return (
       <WebView
         onNavigationStateChange={this.onNavigationStateChange}

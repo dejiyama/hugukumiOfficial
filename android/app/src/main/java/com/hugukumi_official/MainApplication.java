@@ -3,12 +3,14 @@ package com.hugukumi_official;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import io.repro.android.reactbridge.ReproReactBridgePackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
+import io.repro.android.Repro;
+import android.util.Log;
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,6 +44,9 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    Repro.setup(this, "5bf0b937-4112-4970-88c0-09b64806f02c");
     SoLoader.init(this, /* native exopackage */ false);
+    Repro.enablePushNotification();
+    Repro.setLogLevel(Log.DEBUG);
   }
 }
