@@ -13,6 +13,8 @@ import Repro
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
+  var identifierForVendor: UUID?
+  let deviceID = Repro.getDeviceID()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
@@ -43,6 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Repro.setup("5bf0b937-4112-4970-88c0-09b64806f02c")
     
     Repro.setLogLevel(RPRLogLevel.debug)
+    
+    Repro.setUserID("hugukumiplus")
+    
+    print("deviceID: \(String(describing: deviceID))")
 
     return true
   }
