@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, AppState, TouchableOpacity, ImageBackground } from 'react-native'
+import { View, Text, StyleSheet, AppState, TouchableOpacity } from 'react-native'
 import PushNotification from 'react-native-push-notification'
 import DateTimePicker from 'react-native-modal-datetime-picker'
 import moment from 'moment'
@@ -44,14 +44,13 @@ export default class Timer extends Component<{}, State> {
 
   render() {
     return (
-      <View>
-        <ImageBackground source={require('../../../images/suppletimer.png')} style={{ marginTop: 20, padding: 10 }}>
-          <TouchableOpacity onPress={this._showPicker}>
-            <View style={styles.label}>
-              <Text>{moment(this.state.chosenDate).format('HH:mm')}</Text>
-            </View>
-          </TouchableOpacity>
-        </ImageBackground>
+      <View style={{ paddingLeft: 20, flexDirection: 'row', alignItems: 'center' }}>
+        <Text style={{ flex: 1 }}>サプリタイマー</Text>
+        <TouchableOpacity onPress={this._showPicker} style={{ padding: 20 }}>
+          <View style={styles.label}>
+            <Text>{moment(this.state.chosenDate).format('HH:mm')}</Text>
+          </View>
+        </TouchableOpacity>
         <DateTimePicker
           isVisible={this.state.isVisible}
           onConfirm={this._handlePicked}
@@ -65,10 +64,6 @@ export default class Timer extends Component<{}, State> {
 }
 
 const styles = StyleSheet.create({
-  title: {
-    top: 15,
-    marginTop: 50
-  },
   label: {
     alignItems: 'center',
     backgroundColor: 'white',
@@ -76,7 +71,6 @@ const styles = StyleSheet.create({
     borderColor: '#d6d7da',
     width: 100,
     margin: 0,
-    padding: 0,
-    left: 250
+    padding: 0
   }
 })
