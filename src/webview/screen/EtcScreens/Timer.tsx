@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, AppState, TouchableOpacity, ImageBackground } from 'react-native'
+import { View, Text, StyleSheet, AppState, TouchableOpacity } from 'react-native'
 import PushNotification from 'react-native-push-notification'
 import DateTimePicker from 'react-native-modal-datetime-picker'
 import moment from 'moment'
@@ -44,9 +44,9 @@ export default class Timer extends Component<{}, State> {
 
   render() {
     return (
-      <View style={{ flex: 1, flexDirection: 'row' }}>
-        <Text>サプリタイマー</Text>
-        <TouchableOpacity onPress={this._showPicker}>
+      <View style={{ paddingLeft: 20, flexDirection: 'row', alignItems: 'center' }}>
+        <Text style={{ flex: 1 }}>サプリタイマー</Text>
+        <TouchableOpacity onPress={this._showPicker} style={{ padding: 20 }}>
           <View style={styles.label}>
             <Text>{moment(this.state.chosenDate).format('HH:mm')}</Text>
           </View>

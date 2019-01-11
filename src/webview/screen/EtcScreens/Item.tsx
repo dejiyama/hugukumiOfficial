@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, StyleSheet, TouchableHighlight, Image } from 'react-native'
+import { Text, View, StyleSheet, TouchableHighlight } from 'react-native'
 import Timer from '../EtcScreens/Timer'
 
 class Item extends React.Component<{ navigation: any }> {
@@ -46,12 +46,11 @@ class Item extends React.Component<{ navigation: any }> {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    flex: 1
   },
   page: {
-    marginTop: 20
+    padding: 20
   }
 })
 
