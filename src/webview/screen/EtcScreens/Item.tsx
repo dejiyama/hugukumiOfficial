@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, TouchableHighlight, Image } from 'react-native'
+import { Text, View, StyleSheet, TouchableHighlight, Image } from 'react-native'
 import Timer from '../EtcScreens/Timer'
 
 class Item extends React.Component<{ navigation: any }> {
@@ -19,25 +19,25 @@ class Item extends React.Component<{ navigation: any }> {
     return (
       <View style={styles.container}>
         <TouchableHighlight onPress={this.moveMypage} style={styles.page}>
-          <Image source={require('../../../images/mypage.png')} />
+          <Text>マイページ・ログイン</Text>
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.moveGuide} style={styles.page}>
-          <Image source={require('../../../images/guide.png')} />
+          <Text>ご購入・ご利用ガイド</Text>
         </TouchableHighlight>
 
         <Timer />
 
         <TouchableHighlight onPress={this.moveQuestion} style={styles.page}>
-          <Image source={require('../../../images/question.png')} />
+          <Text>お問い合わせ</Text>
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.moveAbout} style={styles.page}>
-          <Image source={require('../../../images/about.png')} />
+          <Text>会社概要</Text>
         </TouchableHighlight>
 
         <TouchableHighlight onPress={this.movePrivacy} style={styles.page}>
-          <Image source={require('../../../images/privacy.png')} />
+          <Text>プライバシーポリシー</Text>
         </TouchableHighlight>
       </View>
     )
