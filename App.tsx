@@ -1,6 +1,6 @@
 import React from 'react'
 import Repro from 'react-native-repro'
-import { SafeAreaView, StyleSheet, PushNotificationIOS, Platform } from 'react-native'
+import { PushNotificationIOS, Platform } from 'react-native'
 import RootNavigation from './src/RootNavigation'
 
 type Props = {}
@@ -20,18 +20,7 @@ class App extends React.Component<Props> {
 
   render() {
     console.log('Repro', Repro)
-    return (
-      <SafeAreaView style={styles.safeArea}>
-        <RootNavigation />
-      </SafeAreaView>
-    )
+    return <RootNavigation />
   }
 }
-
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#F7F7F7'
-  }
-})
 export default App

@@ -100,6 +100,9 @@ const RouteNavigation = createBottomTabNavigator(
     animationEnabled: true,
     swipeEnabled: false,
     tabBarOptions: {
+      style: {
+        backgroundColor: '#ffff'
+      },
       activeBackgroundColor: Color.tabBarOptions.activeBackground,
       activeTintColor: Color.tabBarOptions.active,
       inactiveTintColor: Color.tabBarOptions.inactive,
