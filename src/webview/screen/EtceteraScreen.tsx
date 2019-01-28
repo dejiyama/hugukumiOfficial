@@ -1,6 +1,5 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
-import { StackNavigator, SafeAreaView } from 'react-navigation'
+import { StackNavigator } from 'react-navigation'
 import Item from './EtcScreens/Item'
 import About from './EtcScreens/About'
 import Guide from './EtcScreens/Guide'
@@ -26,24 +25,15 @@ const Etcetera = StackNavigator(
     navigationOptions: ({ navigation }: any) => {
       return {
         header: (
-          <SafeAreaView style={styles.safeArea}>
-            <Etceteraheader
-              onClickCart={() => navigation.navigate('Cart')}
-              onClickBackpage={() => navigation.goBack()}
-              showBackbutton={navigation.state.routeName !== 'Item'}
-            />
-          </SafeAreaView>
+          <Etceteraheader
+            onClickCart={() => navigation.navigate('Cart')}
+            onClickBackpage={() => navigation.goBack()}
+            showBackbutton={navigation.state.routeName !== 'Item'}
+          />
         )
       }
     }
   }
 )
-
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#F7F7F7'
-  }
-})
 
 export default Etcetera
