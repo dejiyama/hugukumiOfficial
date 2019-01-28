@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from 'react-native'
+import { BottomTabBar } from 'react-navigation-tabs'
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation'
 import HomeScreen from './webview/screen/HomeScreen'
 import BiyoriScreen from './webview/screen/BiyoriScreen'
@@ -99,7 +100,11 @@ const RouteNavigation = createBottomTabNavigator(
     tabBarPosition: 'bottom',
     animationEnabled: true,
     swipeEnabled: false,
+    tabBarComponent: a => <BottomTabBar {...a} safeAreaInset={{ bottom: 'never' }} />,
     tabBarOptions: {
+      style: {
+        backgroundColor: '#ffff'
+      },
       activeBackgroundColor: Color.tabBarOptions.activeBackground,
       activeTintColor: Color.tabBarOptions.active,
       inactiveTintColor: Color.tabBarOptions.inactive,

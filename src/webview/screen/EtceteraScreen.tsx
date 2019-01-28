@@ -35,4 +35,5 @@ const Etcetera = StackNavigator(
     }
   }
 )
+
 export default Etcetera
